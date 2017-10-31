@@ -98,10 +98,10 @@
         },
         getMetaFields:function(){
             var toStrictType = this.toStrictType;
-            return this.find('meta[name]').map(function(i,e){
+            return this.find('meta[name],param[name],input[name]').map(function(i,e){
                 return{
                     name  : e.getAttribute('name'),
-                    value : toStrictType(e.getAttribute('content'))
+                    value : toStrictType(e.getAttribute('value') || e.getAttribute('content'))
                 }
             }).toArray();
         },
