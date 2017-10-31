@@ -1,0 +1,16 @@
+<div class="form-group-cc" control="ui.form.cc">
+    <input type="hidden" name="payment_system" value="card">
+    <%= include( 'block/field.cc.number' ) %>
+    <div class="row">
+        <div class="col-xs-6">
+            <%= include( 'block/field.cc.date' ) %>
+        </div>
+        <div class="col-xs-6">
+            <%= include( 'block/field.cc.cvv' ) %>
+        </div>
+    </div>
+    <%= include( 'block/field.email' ) %>
+    <%= include( 'block/field.phone' ) %>
+    <%= include( 'block/form.recurring' ) %>
+    <%= include( 'block/button.submit' ) %>
+</div>

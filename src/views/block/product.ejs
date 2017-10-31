@@ -1,0 +1,19 @@
+<% if(view.attr('product')) { %>
+<div class="checkout-product">
+    <div class="form-group row">
+        <div class="col-sm-4">
+            <img class="checkout-product-image" src="<%=view.attr('product.image')%>" style="width:100%;">
+        </div>
+        <div class="col-sm-8">
+            <h3 class="checkout-product-name">
+                <a href="<%=view.attr('product.url')%>" target="_blank">
+                <%=view.attr('product.name')%>
+                </a>
+            </h3>
+            <p class="checkout-product-desc">
+                <%=view.attr('product.desc')%>
+            </p>
+        </div>
+    </div>
+</div>
+<% } %>

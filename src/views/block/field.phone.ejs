@@ -1,0 +1,14 @@
+<% if(view.attr('field.phone')) { %>
+<div class="form-group row has-feedback-left">
+    <div class="col-xs-12">
+        <div class="relative">
+            <input type="tel" data-mask="(000) 000-00-00" data-mask-clearifnotmatch="true"
+                   required name="phone" class="form-control input-lg" value="<%= params.attr('phone') %>"
+                   placeholder="(000) 000-00-00">
+            <i class="form-control-feedback fa fa-phone"></i>
+        </div>
+    </div>
+</div>
+<% } else { %>
+<input type="hidden" name="phone" value="<%= params.attr('phone') %>">
+<% } %>

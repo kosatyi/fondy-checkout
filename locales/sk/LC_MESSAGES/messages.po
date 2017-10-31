@@ -1,0 +1,686 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-19 13:54+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: static_common/v1/locale/translation.js:1
+#: static_common/v1/locale/templates.js:31
+msgid "MM"
+msgstr "MM"
+
+#: static_common/v1/locale/translation.js:2
+#: static_common/v1/locale/templates.js:32
+msgid "YY"
+msgstr "RR"
+
+#: static_common/v1/locale/translation.js:4
+msgid "approved"
+msgstr "Platba je schválená"
+
+#: static_common/v1/locale/translation.js:5
+msgid "declined"
+msgstr "Platba je zamietnutá"
+
+#: static_common/v1/locale/translation.js:7
+msgid "help_cvv"
+msgstr "3 číslice na zadnej strane"
+
+#: static_common/v1/locale/translation.js:8
+msgid "help_card_number"
+msgstr "Číslo karty je skupina 11-19 číslic na prednej strane platobnej karty"
+
+#: static_common/v1/locale/translation.js:9
+msgid "help_expire"
+msgstr "Mesiac a rok ukončenia platnosti na prednej strane karty."
+
+#: static_common/v1/locale/translation.js:10
+msgid "help_autopayment"
+msgstr "Automatickú platbu pre vybraného obchodníka povoliť."
+
+#: static_common/v1/locale/translation.js:11
+msgid "help_3ds"
+msgstr ""
+"Budete presmerovaný na stránku banky pre overenie 3DSecure. Ak nebudete "
+"presmerovaný, prosím kontaktujte <a href='javascript:void(0)'>link</a>."
+
+#: static_common/v1/locale/translation.js:13
+#: static_common/v1/locale/templates.js:43
+msgid "info_verification"
+msgstr ""
+"Kód získate z SMS notifikácie banky, z internet-bankingu alebo na "
+"zákazníckej podpore vašej banky"
+
+#: static_common/v1/locale/translation.js:14
+#: static_common/v1/locale/templates.js:30
+msgid "info_expire"
+msgstr ""
+"Platnosť do je mesiac a rok ukončenia platnosti, ktoré sú zobrazené na "
+"prednej strane vašej platobnej karty"
+
+#: static_common/v1/locale/translation.js:15
+#: static_common/v1/locale/templates.js:28
+msgid "info_card_number"
+msgstr "Číslo karty je 14-19 číslic na prednej strane vašej platobnej karty"
+
+#: static_common/v1/locale/translation.js:16
+#: static_common/v1/locale/templates.js:34
+msgid "info_cvv"
+msgstr ""
+"CVV2/CVC2 kód je trojčíselný kód na zadnej strane vašej platobnej karty"
+
+#: static_common/v1/locale/translation.js:18
+msgid "card"
+msgstr "Visa/MC"
+
+#: static_common/v1/locale/translation.js:19
+msgid "emoney"
+msgstr "Elektronické peniaze"
+
+#: static_common/v1/locale/translation.js:20
+msgid "ibank"
+msgstr "Internet-banking"
+
+#: static_common/v1/locale/translation.js:21
+msgid "credit"
+msgstr "Kredit"
+
+#: static_common/v1/locale/translation.js:22
+msgid "loans"
+msgstr "Pôžičky"
+
+#: static_common/v1/locale/translation.js:23
+msgid "sepa"
+msgstr "bankový prevod"
+
+#: static_common/v1/locale/translation.js:24
+msgid "liqpay_cash"
+msgstr "Privatbank cashbox"
+
+#: static_common/v1/locale/translation.js:25
+msgid "cash"
+msgstr "hotovosť"
+
+#: static_common/v1/locale/translation.js:27
+msgid "UAH"
+msgstr "UAH"
+
+#: static_common/v1/locale/translation.js:28
+msgid "RUB"
+msgstr "RUB"
+
+#: static_common/v1/locale/translation.js:30
+msgid "valid_required"
+msgstr "Požadované pole"
+
+#: static_common/v1/locale/translation.js:31
+msgid "valid_matches"
+msgstr "Polia neprispôsobené"
+
+#: static_common/v1/locale/translation.js:32
+msgid "valid_notmatches"
+msgstr "Polia by nemali byť prispôsobené"
+
+#: static_common/v1/locale/translation.js:33
+msgid "valid_pattern"
+msgstr "Pole je neplatné"
+
+#: static_common/v1/locale/translation.js:34
+msgid "valid_email"
+msgstr "Nesprávny e-mail"
+
+#: static_common/v1/locale/translation.js:35
+msgid "valid_num"
+msgstr "Pole musí obsahovať iba číslice"
+
+#: static_common/v1/locale/translation.js:36
+msgid "valid_ccard"
+msgstr "Platobná karta je neplatná"
+
+#: static_common/v1/locale/translation.js:37
+msgid "valid_url"
+msgstr "Nesprávna URL"
+
+#: static_common/v1/locale/translation.js:38
+msgid "valid_phone"
+msgstr "Nesprávne telefónne číslo"
+
+#: static_common/v1/locale/translation.js:39
+msgid "valid_account_num"
+msgstr "Nesprávne číslo účtu"
+
+#: static_common/v1/locale/translation.js:40
+msgid "valid_password_strength"
+msgstr "Heslo musí obsahovať písmená a číslice"
+
+#: static_common/v1/locale/translation.js:41
+msgid "valid_password"
+msgstr "Heslo musí mať najmenej 7 znakov"
+
+#: static_common/v1/locale/translation.js:42
+msgid "valid_mfo"
+msgstr "Pole musí obsahovať 6 číslic"
+
+#: static_common/v1/locale/translation.js:43
+msgid "valid_okpo"
+msgstr "Pole musí obsahovať menej než 15 číselných znakov"
+
+#: static_common/v1/locale/translation.js:44
+msgid "valid_exp_date"
+msgstr "Neplatný dátum expirácie"
+
+#: static_common/v1/locale/translation.js:45
+msgid "valid_verify_limit"
+msgstr "Prekročili ste počet pokusov"
+
+#: static_common/v1/locale/translation.js:46
+msgid "valid_verify_invalid_code"
+msgstr "Neplatný kód"
+
+#: static_common/v1/locale/translation.js:47
+msgid "valid_exact_length"
+msgstr "Kód musí obsahovať najmenej 4 znaky"
+
+#: static_common/v1/locale/translation.js:48
+msgid "valid_amount"
+msgstr "Neplatná suma"
+
+#: static_common/v1/locale/translation.js:49
+msgid "valid_cvv2"
+msgstr "Nesprávny formát cvv2 kódu"
+
+#: static_common/v1/locale/translation.js:50
+msgid "valid_numrange"
+msgstr "Prekročený limit prevedenej platby"
+
+#: static_common/v1/locale/translation.js:52
+msgid "valid_min_length"
+msgstr "Nedostatočný počet znakov"
+
+#: static_common/v1/locale/translation.js:53
+msgid "valid_max_length"
+msgstr "Príliš veľa znakov"
+
+#: static_common/v1/locale/translation.js:55
+msgid "II"
+msgstr "Pravidelná splátka"
+
+#: static_common/v1/locale/translation.js:56
+msgid "PP"
+msgstr "Čiastočná platba"
+
+#: static_common/v1/locale/translation.js:58
+msgid "Email sent"
+msgstr "E-mail bol zaslaný"
+
+#: static_common/v1/locale/templates.js:1
+msgid "Please wait"
+msgstr "Čakajte prosím"
+
+#: static_common/v1/locale/templates.js:2
+msgid "Payment was not completed successfully"
+msgstr ""
+
+#: static_common/v1/locale/templates.js:3
+msgid "Please try again"
+msgstr ""
+
+#: static_common/v1/locale/templates.js:4
+msgid "Back"
+msgstr ""
+
+#: static_common/v1/locale/templates.js:5
+msgid "Repeat payment"
+msgstr ""
+
+#: static_common/v1/locale/templates.js:6
+msgid "payment will be repeated in"
+msgstr ""
+
+#: static_common/v1/locale/templates.js:7
+msgid "sec"
+msgstr ""
+
+#: static_common/v1/locale/templates.js:8
+msgid "Card verification"
+msgstr "Overenie karty"
+
+#: static_common/v1/locale/templates.js:9
+msgid "Amount is hold on your credit card account"
+msgstr "Platba je zadržaná na vašej karte"
+
+#: static_common/v1/locale/templates.js:10
+msgid "Order description"
+msgstr "Popis objednávky"
+
+#: static_common/v1/locale/templates.js:11
+msgid "Amount before discount"
+msgstr "Suma bez zľavy"
+
+#: static_common/v1/locale/templates.js:12
+msgid "Order amount"
+msgstr "Výška platby"
+
+#: static_common/v1/locale/templates.js:13
+msgid "Total amount"
+msgstr "Celkom"
+
+#: static_common/v1/locale/templates.js:14
+msgid "Commission"
+msgstr "Poplatok"
+
+#: static_common/v1/locale/templates.js:15
+msgid "Discount"
+msgstr "Zľava"
+
+#: static_common/v1/locale/templates.js:16
+msgid "Amount after discount"
+msgstr "Suma po zľave"
+
+#: static_common/v1/locale/templates.js:17
+msgid "Your payment is being processed"
+msgstr "Vaša platba bola vykonaná"
+
+#: static_common/v1/locale/templates.js:18
+msgid "№ of payment in"
+msgstr "Číslo platby v"
+
+#: static_common/v1/locale/templates.js:19
+msgid "payment system"
+msgstr "platobný systém"
+
+#: static_common/v1/locale/templates.js:20
+msgid "Return to shop web-site"
+msgstr "Vráťte sa na stránku obchodníka"
+
+#: static_common/v1/locale/templates.js:21
+msgid "Payment method"
+msgstr "Platobná metóda"
+
+#: static_common/v1/locale/templates.js:22
+msgid "Name"
+msgstr "Meno"
+
+#: static_common/v1/locale/templates.js:23
+msgid "Last Name"
+msgstr "Priezvisko"
+
+#: static_common/v1/locale/templates.js:24
+msgid "BIC"
+msgstr "BIC"
+
+#: static_common/v1/locale/templates.js:25
+msgid "IBAN"
+msgstr "IBAN"
+
+#: static_common/v1/locale/templates.js:26
+msgid "Checkout"
+msgstr "Zaplatiť"
+
+#: static_common/v1/locale/templates.js:27
+msgid "Card Number"
+msgstr "Číslo karty"
+
+#: static_common/v1/locale/templates.js:29
+msgid "Valid thru"
+msgstr "Platnosť do"
+
+#: static_common/v1/locale/templates.js:33
+msgid "CVV2/CVC2 code"
+msgstr "CVV2/CVC2 kód"
+
+#: static_common/v1/locale/templates.js:35
+msgid "CVV2"
+msgstr "CVV2"
+
+#: static_common/v1/locale/templates.js:36
+msgid "Protected by SSL"
+msgstr "Chránený SSL"
+
+#: static_common/v1/locale/templates.js:37
+msgid "Email address"
+msgstr "E-mailová adresa"
+
+#: static_common/v1/locale/templates.js:38
+msgid "Phone"
+msgstr "Telefón"
+
+#: static_common/v1/locale/templates.js:39
+msgid "I agree with"
+msgstr "Súhlasím s"
+
+#: static_common/v1/locale/templates.js:40
+msgid "Public offer"
+msgstr "Verejný návrh"
+
+#: static_common/v1/locale/templates.js:41
+msgid "Please enter verification code"
+msgstr "Prosím, vložte overovací kód"
+
+#: static_common/v1/locale/templates.js:42
+msgid "verification code"
+msgstr "overovací kód"
+
+#: static_common/v1/locale/templates.js:44
+msgid "Confirm"
+msgstr "Potvrdiť"
+
+#: static_common/v1/locale/templates.js:45
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: static_common/v1/locale/templates.js:46
+msgid "Regular base payment"
+msgstr "Pravidelná platba"
+
+#: static_common/v1/locale/templates.js:47
+msgid "Сharged with the frequency"
+msgstr "Účtované s frekvenciou"
+
+#: static_common/v1/locale/templates.js:48
+msgid "day"
+msgstr "deň"
+
+#: static_common/v1/locale/templates.js:49
+msgid "week"
+msgstr "týždeň"
+
+#: static_common/v1/locale/templates.js:50
+msgid "month"
+msgstr "mesiac"
+
+#: static_common/v1/locale/templates.js:51
+msgid "year"
+msgstr "rok"
+
+#: static_common/v1/locale/templates.js:52
+msgid "2 weeks"
+msgstr "2 týždne"
+
+#: static_common/v1/locale/templates.js:53
+msgid "2 months"
+msgstr "2 mesiace"
+
+#: static_common/v1/locale/templates.js:54
+msgid "quarter"
+msgstr "kvartál"
+
+#: static_common/v1/locale/templates.js:55
+msgid "amount"
+msgstr "suma"
+
+#: static_common/v1/locale/templates.js:56
+msgid "starting with the date"
+msgstr "Začínajúc dátumom"
+
+#: static_common/v1/locale/templates.js:57
+msgid "Price"
+msgstr "Cena"
+
+#: static_common/v1/locale/templates.js:58
+msgid "Shop"
+msgstr "E-shop"
+
+#: static_common/v1/locale/templates.js:59
+msgid "The loan is approved!"
+msgstr "Pôžička je schválená!"
+
+#: static_common/v1/locale/templates.js:60
+msgid ""
+"To finish you need enter the data of your credit card and pay the first "
+"installment payment in the amount of"
+msgstr ""
+"Pre dokončenie musíte vložiť údaje z vašej platobnej karty a uskutočniť prvú "
+"platbuv sume"
+
+#: static_common/v1/locale/templates.js:61
+msgid "The loan was declined"
+msgstr "Pôžička bola zamietnutá"
+
+#: static_common/v1/locale/templates.js:62
+msgid "Unfortunately we can not give you a loan"
+msgstr ""
+
+#: static_common/v1/locale/templates.js:63
+msgid "Processing of the application"
+msgstr "Vaša žiadosť je v procese"
+
+#: static_common/v1/locale/templates.js:64
+msgid "Your application for a loan in the processing"
+msgstr "Vaša žiadosť o pôžičku je v procese schválenia"
+
+#: static_common/v1/locale/templates.js:65
+msgid "We will call you back within 15 minutes on the number"
+msgstr "Budeme vás kontaktovať na vaše telefónne číslo do 15 minút"
+
+#: static_common/v1/locale/templates.js:66
+msgid "The number of payments"
+msgstr "Počet platieb"
+
+#: static_common/v1/locale/templates.js:67
+msgid "Personal data"
+msgstr "Osobné údaje"
+
+#: static_common/v1/locale/templates.js:68
+msgid "Resident"
+msgstr "Rezident"
+
+#: static_common/v1/locale/templates.js:69
+msgid "Yes"
+msgstr "Áno"
+
+#: static_common/v1/locale/templates.js:70
+msgid "No"
+msgstr "Nie"
+
+#: static_common/v1/locale/templates.js:71
+msgid "Middle Name"
+msgstr "Stredné meno"
+
+#: static_common/v1/locale/templates.js:72
+msgid "Date of birth"
+msgstr "Dátum narodenia"
+
+#: static_common/v1/locale/templates.js:73
+msgid "Sex"
+msgstr "Pohlavie"
+
+#: static_common/v1/locale/templates.js:74
+msgid "Male"
+msgstr "Muž"
+
+#: static_common/v1/locale/templates.js:75
+msgid "Female"
+msgstr "Žena"
+
+#: static_common/v1/locale/templates.js:76
+msgid "Citizenship"
+msgstr "Bydlisko"
+
+#: static_common/v1/locale/templates.js:77
+msgid "ITN"
+msgstr "MTČ"
+
+#: static_common/v1/locale/templates.js:78
+msgid "Social status"
+msgstr "Stav"
+
+#: static_common/v1/locale/templates.js:79
+msgid "Type of employment"
+msgstr "Druh zamestnania"
+
+#: static_common/v1/locale/templates.js:80
+msgid "Passport data"
+msgstr "Pas"
+
+#: static_common/v1/locale/templates.js:81
+msgid "Series"
+msgstr "Sériové číslo"
+
+#: static_common/v1/locale/templates.js:82
+msgid "Number"
+msgstr "Číslo"
+
+#: static_common/v1/locale/templates.js:83
+msgid "Date of issue"
+msgstr "Dátum vydania"
+
+#: static_common/v1/locale/templates.js:84
+msgid "Agree with"
+msgstr "Súhlasím s"
+
+#: static_common/v1/locale/templates.js:85
+msgid "conditions"
+msgstr "podmienky"
+
+#: static_common/v1/locale/templates.js:86
+msgid "Gave me a loan"
+msgstr "Poskytnite mi pôžičku"
+
+#: static_common/v1/locale/templates.js:87
+msgid "Order cost"
+msgstr "Hodnota objednávky"
+
+#: static_common/v1/locale/templates.js:88
+msgid "Amount of parts"
+msgstr "Čiastka"
+
+#: static_common/v1/locale/templates.js:89
+msgid "Monthly fee"
+msgstr "Mesačný poplatok"
+
+#: static_common/v1/locale/templates.js:90
+msgid "Error"
+msgstr "Chyba"
+
+#: static_common/v1/locale/templates.js:91
+msgid "Sender card"
+msgstr "Platobná karta platiteľa"
+
+#: static_common/v1/locale/templates.js:92
+msgid "Recipient card"
+msgstr "Platobná karta príjemcu"
+
+#: static_common/v1/locale/templates.js:93
+msgid "Restrictions and limits:"
+msgstr "Obmedzenia a limity:"
+
+#: static_common/v1/locale/templates.js:94
+msgid "Only Ukrainian card accepted"
+msgstr "Akceptovaná iba ukrajinská platobná karta"
+
+#: static_common/v1/locale/templates.js:95
+msgid "Maximum transfer amount: 14999 UAH"
+msgstr "Maximálna čiastka prevodu: 14999 UAH"
+
+#: static_common/v1/locale/templates.js:96
+msgid "Monthly transfer limit: 149999 UAH"
+msgstr "Mesačný limit prevodu: 149999 UAH"
+
+#: static_common/v1/locale/templates.js:97
+msgid "Amount"
+msgstr "Čiastka"
+
+#: static_common/v1/locale/templates.js:98
+msgid "Fee"
+msgstr "Poplatok"
+
+#: static_common/v1/locale/templates.js:99
+msgid "I confirm that I have read to a"
+msgstr "Potvrdzujem, že som si prečítal"
+
+#: static_common/v1/locale/templates.js:100
+msgid "p2p_offer_url"
+msgstr "/static_common/v1/p2p_offer.pdf"
+
+#: static_common/v1/locale/templates.js:101
+msgid "and agree to its terms"
+msgstr "a súhlasím s podmienkami"
+
+#: static_common/v1/locale/templates.js:102
+msgid "На вашей карте была заблокирована небольшая сумма: 1"
+msgstr "Na vašej platobnej karte bolo zablokovaná suma: 1"
+
+#: static_common/v1/locale/templates.js:103
+msgid ""
+"Уточните 4 цифры, которые указаны по этой операции в вашем интернет-банке "
+"либо в SMS сообщении от вашего банка"
+msgstr ""
+"Kontrolné štvorčíslo pre túto operáciu obdržíte v SMS notifikácii od "
+"vašejbanky"
+
+#: static_common/v1/locale/templates.js:104
+msgid "Send money"
+msgstr "Poslať peniaze"
+
+#: static_common/v1/locale/templates.js:105
+msgid "Congratulations"
+msgstr "Gratulujeme"
+
+#: static_common/v1/locale/templates.js:106
+msgid "Transfer completed successfully"
+msgstr "Platba prebehla úspešne"
+
+#: static_common/v1/locale/templates.js:107
+msgid "Need receipt?"
+msgstr "Potrebujete potvrdenku?"
+
+#: static_common/v1/locale/templates.js:108
+msgid "Send receipt"
+msgstr "Poslať potvrdenku"
+
+#: static_common/v1/locale/templates.js:109
+msgid "Try again"
+msgstr "Skúsiť opäť"
+
+#: static_common/v1/locale/templates.js:110
+msgid "We are sorry"
+msgstr "Je nám ľúto"
+
+#: static_common/v1/locale/templates.js:111
+msgid "Transfer declined"
+msgstr "Platba bola zamietnutá"
+
+#: static_common/v1/locale/templates.js:112
+msgid "Decline reason"
+msgstr "Dôvod zamietnutia"
+
+#: static_common/v1/locale/templates.js:113
+msgid ""
+"Sender or recipient card daily limit exceeded, or one of the cards was "
+"rejected by the payment system"
+msgstr ""
+"Denný limit na karte odosielateľa alebo príjemcu bol prekročený alebo jedna "
+"z kariet bola platobným systémom zamietnutá"
+
+#: static_common/v1/locale/templates.js:114
+msgid "Please wait, your transfer is being processed"
+msgstr "Čakajte prosím, vaša platba sa spracováva"
+
+#~ msgid "Maximum transfer amount: 5000 UAH"
+#~ msgstr "Maximálna čiastka prevodu: 5000 UAH"
+
+#~ msgid "Monthly transfer limit: 20000 UAH"
+#~ msgstr "Mesačný limit prevodu: 20000 UAH"
+
+#~ msgid "Unfortunately we can not provide a loan"
+#~ msgstr "Bohužiaľ nemôžeme vám poskytnúť pôžičku"
+
+#~ msgid "p2p_currency_value"
+#~ msgstr "UAH"
+
+#~ msgid "p2p_currency_name"
+#~ msgstr "uah"

@@ -1,0 +1,71 @@
+.fa.form-control-feedback {
+  line-height: @input-height-base;
+}
+.input-sm ~ .fa.form-control-feedback {
+  line-height: @input-height-base;
+}
+.input-lg ~ .fa.form-control-feedback {
+  line-height: @input-height-large;
+}
+.has-feedback-left .form-control {
+  padding-left: @input-height-base;
+  padding-right: @padding-base-horizontal;
+}
+.has-feedback-left .form-control-feedback {
+  left: 0;
+}
+
+.form-control-feedback{
+  color: @input-color-placeholder ;
+}
+
+.has-feedback-left:not(.has-error) .form-control.state-focus ~ .form-control-feedback,
+.has-feedback-left:not(.has-error) .form-control:focus ~ .form-control-feedback{
+  color: @brand-primary ;
+}
+
+.form-horizontal .has-feedback-left .form-control-feedback {
+  left: @grid-gutter-width / 2;
+}
+
+.has-feedback-left.search .relative:after{
+  display:none;
+}
+
+.has-feedback-left .relative:after{
+  font-family: FontAwesome;
+  position:absolute;
+  z-index:10;
+  top:-6px;
+  right:-7px;
+  font-size:10px;
+  line-height:10px;
+  border-radius:14px;
+  display:block;
+  padding:0;
+  width:14px;
+  height:14px;
+  line-height:14px;
+  text-align:center;
+  color:#fff;
+}
+
+.has-feedback-left.has-success .relative:after{
+  content:"\f00c";
+  background-color:@state-success-text;
+}
+.has-feedback-left.has-error .relative:after{
+  content:"\f068";
+  background-color:@state-danger-text;
+}
+
+.has-feedback-left .input-sm {
+  padding-left:@input-height-small;
+}
+.has-feedback-left .input-lg {
+  padding-left: @input-height-large;
+}
+
+.form-control-feedback{
+  pointer-events: initial;
+}

@@ -1,0 +1,15 @@
+<% if(view.attr('field.email')) { %>
+<div class="form-group row has-feedback-left">
+    <div class="col-xs-12">
+        <div class="relative">
+            <input type="email" name="email" required class="form-control input-lg"
+                   value="<%= params.attr('email') %>" placeholder="Email">
+            <i class="form-control-feedback fa fa-envelope-o"
+               data-toggle="tooltip"
+               title="<%= _('Email tooltip') %>"></i>
+        </div>
+    </div>
+</div>
+<% } else { %>
+<input type="hidden" name="email" value="<%= params.attr('email') %>">
+<% } %>

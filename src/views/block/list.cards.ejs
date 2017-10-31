@@ -1,0 +1,9 @@
+<li class="dropdown-header"><%= _('Saved session cards') %></li>
+<% model.each(function(item){ %>
+<li>
+    <a href="javascript:void(0)" data-card="<%- item.stringify() %>" tabindex="-1">
+        <span class="text-muted pull-right"><%=item.attr('expiry_date') %></span>
+        <%=item.attr('card_number')%>
+    </a>
+</li>
+<% }) %>

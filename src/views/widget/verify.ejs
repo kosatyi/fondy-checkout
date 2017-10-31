@@ -1,0 +1,30 @@
+<div class="form-group-verify">
+    <input type="hidden" name="payment_system" value="verify">
+    <div class="form-group row">
+        <div class="col-sm-4">
+            <label class="form-control-static input-lg">Code:</label>
+        </div>
+        <div class="col-sm-8 has-feedback-left">
+            <div class="relative">
+                <input type="text" name="code" maxlength="4" required class="form-control input-lg" value=""
+                       placeholder="Code">
+                <i class="form-control-feedback fa fa-user-secret"></i>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-shadow"></div>
+    <div class="form-group form-group-button row">
+        <div class="button-group">
+        <div class="col-xs-6">
+            <button type="submit" class="btn btn-lg btn-block btn-primary">
+                <%= _('Confirm') %>
+            </button>
+        </div>
+        <div class="col-xs-6">
+            <button class="btn btn-lg btn-block btn-warning" data-action="page:checkout">
+                <%= _('Cancel') %>
+            </button>
+        </div>
+        </div>
+    </div>
+</div>

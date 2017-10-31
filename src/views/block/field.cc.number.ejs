@@ -1,0 +1,15 @@
+<div class="form-group row has-feedback-left">
+    <div class="col-xs-12">
+        <input type="hidden" name="hash" value="">
+        <div class="relative dropdown" control="ui.cards.list">
+            <input value="" type="tel" spellcheck="false" required data-ccard="true"
+                   name="card_number" control="ui.cc.number"
+                   maxlength="19" class="form-control input-lg" placeholder="<%= _('Card number') %>">
+            <i class="form-control-feedback fa fa-credit-card" data-toggle="tooltip" title="<%= _('Card number is 14-19 digits on the front side of your credit card') %>"></i>
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-arrow-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-cards"></ul>
+        </div>
+    </div>
+</div>

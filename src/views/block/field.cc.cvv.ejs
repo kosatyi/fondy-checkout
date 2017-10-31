@@ -1,0 +1,17 @@
+<div class="form-group single has-feedback-left">
+    <div class="relative">
+        <div class="form-control form-control-cvv input-lg" tabindex="-1" control="ui.cc.cvv">
+            <span class="form-control-mask" data-mask></span>
+            <input value="" data-input class="novalidate"
+                   type="tel" maxlength="3"
+                   placeholder="CVV2">
+            <span class="form-control-hidden">
+                    <input name="cvv2" value="" data-cvv2="true" required tabindex="-1" data-field
+                        type="text" maxlength="3">
+            </span>
+        </div>
+        <i class="form-control-feedback fa fa-eye-slash"
+           data-toggle="tooltip"
+           title="<%= _('CVV2/CVC2 code is three-digit code on the back of your credit card') %>"></i>
+    </div>
+</div>

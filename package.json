@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "main": "deploy.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "deferred": "~0.7.1",
+    "del": "^3.0.0",
+    "extend": "~3.0.0",
+    "filewalker": "~0.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-html-to-js": "0.0.5",
+    "gulp-less": "^3.3.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-wrap": "^0.13.0",
+    "i18next-conv": "~2.0.0",
+    "node-gettext-generator": "git://github.com/kosatyi/node-gettext-generator"
+  }
+}

@@ -1,0 +1,626 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-23 17:31+0300\n"
+"PO-Revision-Date: 2017-06-06 17:29+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#: src/locale/templates.js:1 src/views/block/button.submit.ejs:6
+msgid "Pay"
+msgstr ""
+
+#: src/locale/templates.js:2
+msgid "CVV2/CVC2 code is three-digit code on the back of your credit card"
+msgstr ""
+
+#: src/locale/templates.js:3
+msgid ""
+"Valid thru is the expiry month and year indicated on the front side of your "
+"credit card"
+msgstr ""
+
+#: src/locale/templates.js:4
+msgid "MM / YY"
+msgstr ""
+
+#: src/locale/templates.js:5
+msgid "Card number is 14-19 digits on the front side of your credit card"
+msgstr ""
+
+#: src/locale/templates.js:6
+msgid "Card number"
+msgstr ""
+
+#: src/locale/templates.js:7 src/views/block/form.custom.ejs:8
+msgid "Total amount"
+msgstr "Общая сумма"
+
+#: src/locale/templates.js:8
+msgid "Regular payment"
+msgstr ""
+
+#: src/locale/templates.js:9 src/views/block/form.recurring.ejs:17
+msgid "Frequency"
+msgstr ""
+
+#: src/locale/templates.js:10 src/views/block/form.recurring.ejs:25
+msgid "every day"
+msgstr ""
+
+#: src/locale/templates.js:11
+msgid "every week"
+msgstr ""
+
+#: src/locale/templates.js:12 src/views/block/form.recurring.ejs:27
+msgid "every 2 weeks"
+msgstr ""
+
+#: src/locale/templates.js:13
+msgid "every month"
+msgstr ""
+
+#: src/locale/templates.js:14 src/views/block/form.recurring.ejs:29
+msgid "every 2 month"
+msgstr ""
+
+#: src/locale/templates.js:15
+msgid "every quarter"
+msgstr ""
+
+#: src/locale/templates.js:16
+msgid "Amount"
+msgstr "Сумма"
+
+#: src/locale/templates.js:17
+msgid "Starting date"
+msgstr ""
+
+#: src/locale/templates.js:18 src/views/block/list.cards.ejs:1
+msgid "Saved session cards"
+msgstr ""
+
+#: src/locale/templates.js:19 src/views/block/list.payment.methods.ejs:6
+msgid "Change payment method"
+msgstr ""
+
+#: src/locale/templates.js:20
+msgid "OTP"
+msgstr ""
+
+#: src/locale/templates.js:21
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#: src/locale/templates.js:22 src/views/page/checkout.ejs:21
+msgid "English"
+msgstr ""
+
+#: src/locale/templates.js:23 src/views/page/checkout.ejs:22
+msgid "Українська"
+msgstr ""
+
+#: src/locale/templates.js:24 src/views/page/checkout.ejs:23
+msgid "Latviešu"
+msgstr ""
+
+#: src/locale/templates.js:25 src/views/page/checkout.ejs:24
+msgid "Français"
+msgstr ""
+
+#: src/locale/templates.js:26 src/views/page/checkout.ejs:25
+msgid "Čeština"
+msgstr ""
+
+#: src/locale/templates.js:27 src/views/page/checkout.ejs:27
+msgid "Settings"
+msgstr ""
+
+#: src/locale/templates.js:28
+msgid "Sign in"
+msgstr ""
+
+#: src/locale/templates.js:29
+msgid "Cancel"
+msgstr "Отменить"
+
+#: src/locale/templates.js:30
+msgid "Back to merchant"
+msgstr ""
+
+#~ msgid "MM"
+#~ msgstr "MM"
+
+#~ msgid "YY"
+#~ msgstr "ГГ"
+
+#~ msgid "approved"
+#~ msgstr "успешно"
+
+#~ msgid "declined"
+#~ msgstr "неуспешно"
+
+#~ msgid "help_cvv"
+#~ msgstr "3 цифры на обратной стороне карты"
+
+#~ msgid "help_card_number"
+#~ msgstr "Номер карты это 11-19 цифр указанных на лицевой стороне"
+
+#~ msgid "help_expire"
+#~ msgstr ""
+#~ "\"Месяц и год окончания действия карты. Указаны на лицевой стороне карты"
+
+#~ msgid "help_autopayment"
+#~ msgstr ""
+#~ "При включении этой опции вы сможете автоматически оплачивать счета в "
+#~ "пользу этого получателя, например по расписанию."
+
+#~ msgid "help_3ds"
+#~ msgstr ""
+#~ "Сейчас вы будете перенаправлены на 3DSecure страницу своего банка. Если "
+#~ "этого не произошло, перейдите по этой <a href='javascript:"
+#~ "void(0)'>ссылке</a>."
+
+#~ msgid "info_verification"
+#~ msgstr ""
+#~ "Узнать код можно из SMS уведомления от банка, в выписках интернет-"
+#~ "банкинга или позвонив в ваш банк"
+
+#~ msgid "info_expire"
+#~ msgstr ""
+#~ "Срок действия карты - месяц и год, указанные на лицевой стороне вашей "
+#~ "банковской карты"
+
+#~ msgid "info_card_number"
+#~ msgstr ""
+#~ "Номер карты - это 14-19 цифр на лицевой стороне вашей банковской карты"
+
+#~ msgid "info_cvv"
+#~ msgstr ""
+#~ "CVV2/CVC2 код - это трехзначный цифровой код, указанный на обратной "
+#~ "стороне вашей банковской карты"
+
+#~ msgid "card"
+#~ msgstr "Visa/MC"
+
+#~ msgid "emoney"
+#~ msgstr "Электронные деньги"
+
+#~ msgid "ibank"
+#~ msgstr "Интернет-банки"
+
+#~ msgid "credit"
+#~ msgstr "Оплата частями FONDY"
+
+#~ msgid "loans"
+#~ msgstr "Займ "
+
+#~ msgid "sepa"
+#~ msgstr "Оплата со счета"
+
+#~ msgid "liqpay_cash"
+#~ msgstr "Терминал Приватбанка"
+
+#~ msgid "cash"
+#~ msgstr "Наличные"
+
+#~ msgid "UAH"
+#~ msgstr "ГРН"
+
+#~ msgid "RUB"
+#~ msgstr "РУБ "
+
+#~ msgid "valid_required"
+#~ msgstr "Обязательное поле"
+
+#~ msgid "valid_matches"
+#~ msgstr "Поля не совпадают"
+
+#~ msgid "valid_notmatches"
+#~ msgstr "Поля не должны совпадать"
+
+#~ msgid "valid_pattern"
+#~ msgstr "В поле есть ошибки"
+
+#~ msgid "valid_email"
+#~ msgstr "Неверный email"
+
+#~ msgid "valid_num"
+#~ msgstr "Поле должно содержать только цифры"
+
+#~ msgid "valid_ccard"
+#~ msgstr "Некорректный номер карты"
+
+#~ msgid "valid_url"
+#~ msgstr "Некорректная ссылка"
+
+#~ msgid "valid_phone"
+#~ msgstr "Некорректный номер телефона"
+
+#~ msgid "valid_account_num"
+#~ msgstr "Некорректный номер счета"
+
+#~ msgid "valid_password_strength"
+#~ msgstr "Пароль должен содержать буквы и цифры"
+
+#~ msgid "valid_password"
+#~ msgstr "Пароль должен быть длиной минимум 7 цифр"
+
+#~ msgid "valid_mfo"
+#~ msgstr "Поле должно содержать 6 цифр"
+
+#~ msgid "valid_okpo"
+#~ msgstr "Поле должно содержать не более 15 знаков"
+
+#~ msgid "valid_exp_date"
+#~ msgstr "Некорректный срок действия"
+
+#~ msgid "valid_verify_limit"
+#~ msgstr "Вы превысили лимит на количество попыток"
+
+#~ msgid "valid_verify_invalid_code"
+#~ msgstr "Неверный код"
+
+#~ msgid "valid_exact_length"
+#~ msgstr "Код должен содержать минимум 4 цифры"
+
+#~ msgid "valid_amount"
+#~ msgstr "Некорректная сумма"
+
+#~ msgid "valid_cvv2"
+#~ msgstr "Неверный CVV2 формат"
+
+#~ msgid "valid_numrange"
+#~ msgstr "Превышен допустимый лимит суммы"
+
+#~ msgid "valid_min_length"
+#~ msgstr "Слишком мало символов "
+
+#~ msgid "valid_max_length"
+#~ msgstr "Слишком много символов"
+
+#~ msgid "II"
+#~ msgstr "Мгновенная рассрочка"
+
+#~ msgid "PP"
+#~ msgstr "Оплата частями"
+
+#~ msgid "Email sent"
+#~ msgstr "Письмо отправлено"
+
+#~ msgid "Please wait"
+#~ msgstr "Пожалуйста, подождите"
+
+#~ msgid "Payment was not completed successfully"
+#~ msgstr "Платеж не был успешно завершен"
+
+#~ msgid "Please try again"
+#~ msgstr "Пожалуйста, попробуйте еще раз"
+
+#~ msgid "Back"
+#~ msgstr "Назад"
+
+#~ msgid "Repeat payment"
+#~ msgstr "Повторить оплату"
+
+#~ msgid "payment will be repeated in"
+#~ msgstr "платеж будет повторен через "
+
+#~ msgid "sec"
+#~ msgstr "сек"
+
+#~ msgid "Card verification"
+#~ msgstr "Верификация карты"
+
+#~ msgid "Amount is hold on your credit card account"
+#~ msgstr "На вашей карте будет временно заблокирована небольшая сумма"
+
+#~ msgid "Order description"
+#~ msgstr "Описание заказа"
+
+#~ msgid "Amount before discount"
+#~ msgstr "Общая сумма"
+
+#~ msgid "Order amount"
+#~ msgstr "Сумма к оплате"
+
+#~ msgid "Commission"
+#~ msgstr "Комиссия "
+
+#~ msgid "Discount"
+#~ msgstr "Скидка"
+
+#~ msgid "Amount after discount"
+#~ msgstr "Сумма со скидкой"
+
+#~ msgid "Your payment is being processed"
+#~ msgstr "Ваш платеж в обработке…"
+
+#~ msgid "№ of payment in"
+#~ msgstr "№ платежа в"
+
+#~ msgid "payment system"
+#~ msgstr "платежной системе"
+
+#~ msgid "Return to shop web-site"
+#~ msgstr "Вернуться на сайт интернет-магазина"
+
+#~ msgid "Payment method"
+#~ msgstr "Способы оплаты"
+
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgid "Last Name"
+#~ msgstr "Фамилия"
+
+#~ msgid "BIC"
+#~ msgstr "БИК"
+
+#~ msgid "IBAN"
+#~ msgstr "IBAN"
+
+#~ msgid "Checkout"
+#~ msgstr "Оплатить"
+
+#~ msgid "Card Number"
+#~ msgstr "Номер карты"
+
+#~ msgid "Valid thru"
+#~ msgstr "Срок действия"
+
+#~ msgid "CVV2/CVC2 code"
+#~ msgstr "CVV2/CVC2 "
+
+#~ msgid "CVV2"
+#~ msgstr "CVV2"
+
+#~ msgid "Protected by SSL"
+#~ msgstr "Защищено SSL"
+
+#~ msgid "Email address"
+#~ msgstr "Email"
+
+#~ msgid "Phone"
+#~ msgstr "Номер телефона"
+
+#~ msgid "I agree with"
+#~ msgstr "Я соглашаюсь с "
+
+#~ msgid "Public offer"
+#~ msgstr "Договором оферты "
+
+#~ msgid "Please enter verification code"
+#~ msgstr "Введите проверочный код"
+
+#~ msgid "verification code"
+#~ msgstr "Проверочный код"
+
+#~ msgid "Regular base payment"
+#~ msgstr "Сделать платеж регулярным"
+
+#~ msgid "Сharged with the frequency"
+#~ msgstr "Списывать с периодичностью"
+
+#~ msgid "day"
+#~ msgstr "день"
+
+#~ msgid "week"
+#~ msgstr "неделю"
+
+#~ msgid "month"
+#~ msgstr "месяц"
+
+#~ msgid "year"
+#~ msgstr "год"
+
+#~ msgid "2 weeks"
+#~ msgstr "2 недели"
+
+#~ msgid "2 months"
+#~ msgstr "2 месяца"
+
+#~ msgid "quarter"
+#~ msgstr "квартал"
+
+#~ msgid "amount"
+#~ msgstr "Сумму"
+
+#~ msgid "starting with the date"
+#~ msgstr "Начиная с"
+
+#~ msgid "Price"
+#~ msgstr "Стоимость"
+
+#~ msgid "Shop"
+#~ msgstr "Магазин"
+
+#~ msgid "The loan is approved!"
+#~ msgstr "Кредит одобрен!"
+
+#~ msgid ""
+#~ "To finish you need enter the data of your credit card and pay the first "
+#~ "installment payment in the amount of"
+#~ msgstr ""
+#~ "Для завершения вам необходимо ввести данные вашей карты и оплатить первый "
+#~ "взнос в размере"
+
+#~ msgid "The loan was declined"
+#~ msgstr "Кредит не одобрен"
+
+#~ msgid "Unfortunately we can not give you a loan"
+#~ msgstr "К сожалению, мы не можем выдать вам кредит"
+
+#~ msgid "Processing of the application"
+#~ msgstr "Обработка заявки"
+
+#~ msgid "Your application for a loan in the processing"
+#~ msgstr "Ваша заявка на кредит находится в обработке"
+
+#~ msgid "We will call you back within 15 minutes on the number"
+#~ msgstr "Мы перезвоним вам в течение 15 минут по телефону"
+
+#~ msgid "The number of payments"
+#~ msgstr "Количество платежей"
+
+#~ msgid "Personal data"
+#~ msgstr "Личная информация"
+
+#~ msgid "Resident"
+#~ msgstr "Резидент"
+
+#~ msgid "Yes"
+#~ msgstr "Да"
+
+#~ msgid "No"
+#~ msgstr "Нет"
+
+#~ msgid "Middle Name"
+#~ msgstr "Второе имя"
+
+#~ msgid "Date of birth"
+#~ msgstr "Дата Рождения "
+
+#~ msgid "Sex"
+#~ msgstr "Пол"
+
+#~ msgid "Male"
+#~ msgstr "Муж"
+
+#~ msgid "Female"
+#~ msgstr "Жен"
+
+#~ msgid "Citizenship"
+#~ msgstr "Гражданство "
+
+#~ msgid "ITN"
+#~ msgstr "ИНН"
+
+#~ msgid "Social status"
+#~ msgstr "Социальный статус"
+
+#~ msgid "Type of employment"
+#~ msgstr "Вид занятости"
+
+#~ msgid "Passport data"
+#~ msgstr "Паспортные данные"
+
+#~ msgid "Series"
+#~ msgstr "Серия"
+
+#~ msgid "Number"
+#~ msgstr "Номер"
+
+#~ msgid "Date of issue"
+#~ msgstr "Дата выдачи"
+
+#~ msgid "Agree with"
+#~ msgstr "Соглашаюсь с"
+
+#~ msgid "conditions"
+#~ msgstr "условиями "
+
+#~ msgid "Gave me a loan"
+#~ msgstr "Выдайте мне кредит"
+
+#~ msgid "Order cost"
+#~ msgstr "Стоимость заказа"
+
+#~ msgid "Amount of parts"
+#~ msgstr "Количество частей"
+
+#~ msgid "Monthly fee"
+#~ msgstr "Ежемесячная комиссия "
+
+#~ msgid "Error"
+#~ msgstr "Ошибка"
+
+#~ msgid "Sender card"
+#~ msgstr "Карта отправителя"
+
+#~ msgid "Recipient card"
+#~ msgstr "Карта получателя"
+
+#~ msgid "Restrictions and limits:"
+#~ msgstr "Ограничения и лимиты:"
+
+#~ msgid "Only Ukrainian card accepted"
+#~ msgstr "Принимаются только украинские карты"
+
+#~ msgid "Maximum transfer amount: 14999 UAH"
+#~ msgstr "Максимальная сумма перевода: 14999 ГРН"
+
+#~ msgid "Monthly transfer limit: 149999 UAH"
+#~ msgstr "Месячный лимит переводов: 149999 ГРН"
+
+#~ msgid "Fee"
+#~ msgstr "Комиссия"
+
+#~ msgid "I confirm that I have read to a"
+#~ msgstr "Я подтверждаю, что я прочитал"
+
+#~ msgid "p2p_offer_url"
+#~ msgstr "/static_common/v1/p2p_offer.pdf"
+
+#~ msgid "and agree to its terms"
+#~ msgstr "и согласен с его условиями"
+
+#~ msgid "Send money"
+#~ msgstr "Отправить деньги"
+
+#~ msgid "Congratulations"
+#~ msgstr "Поздравляем"
+
+#~ msgid "Transfer completed successfully"
+#~ msgstr "Перевод прошел успешно "
+
+#~ msgid "Need receipt?"
+#~ msgstr "Нужен чек?"
+
+#~ msgid "Send receipt"
+#~ msgstr "Отправить чек"
+
+#~ msgid "Try again"
+#~ msgstr "Попробовать еще раз"
+
+#~ msgid "We are sorry"
+#~ msgstr "Извините"
+
+#~ msgid "Transfer declined"
+#~ msgstr "Перевод отклонен"
+
+#~ msgid "Decline reason"
+#~ msgstr "Причина отказа"
+
+#~ msgid ""
+#~ "Sender or recipient card daily limit exceeded, or one of the cards was "
+#~ "rejected by the payment system"
+#~ msgstr ""
+#~ "На карте отправителя или получателя был превышен дневной лимит или карты  "
+#~ "были отклонены платежной системой"
+
+#~ msgid "Please wait, your transfer is being processed"
+#~ msgstr "Подождите, пожалуйста, ваш перевод находится в обработке"
+
+#~ msgid "Maximum transfer amount: 5000 UAH"
+#~ msgstr "Максимальная сумма перевода: 5000 ГРН"
+
+#~ msgid "Monthly transfer limit: 20000 UAH"
+#~ msgstr "Месячный лимит переводов: 20000 ГРН"
+
+#~ msgid "p2p_currency_value"
+#~ msgstr "UAH"
+
+#~ msgid "p2p_currency_name"
+#~ msgstr "ГРН"

@@ -1,0 +1,14 @@
+<div class="form-group-custom">
+    <%= include('block/field.amount') %>
+    <% params.each('custom',function(field,value,key){ %>
+        <% if(field.attr('hidden')) { %>
+            <%= customField(key,value) %>
+        <% } else { %>
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <%= customField(key,value) %>
+            </div>
+        </div>
+        <% } %>
+    <% }) %>
+</div>

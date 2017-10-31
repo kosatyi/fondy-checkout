@@ -1,0 +1,599 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-23 17:09+0300\n"
+"PO-Revision-Date: 2016-12-02 13:09+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#: src/locale/templates.js:1 src/views/block/button.submit.ejs:6
+msgid "Pay"
+msgstr ""
+
+#: src/locale/templates.js:2
+msgid "CVV2/CVC2 code is three-digit code on the back of your credit card"
+msgstr ""
+
+#: src/locale/templates.js:3
+msgid ""
+"Valid thru is the expiry month and year indicated on the front side of your "
+"credit card"
+msgstr ""
+
+#: src/locale/templates.js:4
+msgid "MM / YY"
+msgstr ""
+
+#: src/locale/templates.js:5
+msgid "Card number is 14-19 digits on the front side of your credit card"
+msgstr ""
+
+#: src/locale/templates.js:6
+msgid "Card number"
+msgstr ""
+
+#: src/locale/templates.js:7
+msgid "Regular payment"
+msgstr ""
+
+#: src/locale/templates.js:8 src/views/block/form.recurring.ejs:17
+msgid "Frequency"
+msgstr ""
+
+#: src/locale/templates.js:9 src/views/block/form.recurring.ejs:25
+msgid "every day"
+msgstr ""
+
+#: src/locale/templates.js:10
+msgid "every week"
+msgstr ""
+
+#: src/locale/templates.js:11 src/views/block/form.recurring.ejs:27
+msgid "every 2 weeks"
+msgstr ""
+
+#: src/locale/templates.js:12
+msgid "every month"
+msgstr ""
+
+#: src/locale/templates.js:13 src/views/block/form.recurring.ejs:29
+msgid "every 2 month"
+msgstr ""
+
+#: src/locale/templates.js:14
+msgid "every quarter"
+msgstr ""
+
+#: src/locale/templates.js:15
+msgid "Amount"
+msgstr "Summa"
+
+#: src/locale/templates.js:16
+msgid "Starting date"
+msgstr ""
+
+#: src/locale/templates.js:17 src/views/block/list.cards.ejs:1
+msgid "Saved session cards"
+msgstr ""
+
+#: src/locale/templates.js:18 src/views/block/list.payment.methods.ejs:6
+msgid "Change payment method"
+msgstr ""
+
+#: src/locale/templates.js:19
+msgid "OTP"
+msgstr ""
+
+#: src/locale/templates.js:20
+msgid "Confirm"
+msgstr "Apstiprināt"
+
+#: src/locale/templates.js:21
+msgid "Back to merchant"
+msgstr ""
+
+#: src/locale/templates.js:22 src/views/page/checkout.ejs:21
+msgid "English"
+msgstr ""
+
+#: src/locale/templates.js:23 src/views/page/checkout.ejs:22
+msgid "Українська"
+msgstr ""
+
+#: src/locale/templates.js:24 src/views/page/checkout.ejs:23
+msgid "Latviešu"
+msgstr ""
+
+#: src/locale/templates.js:25 src/views/page/checkout.ejs:24
+msgid "Français"
+msgstr ""
+
+#: src/locale/templates.js:26 src/views/page/checkout.ejs:25
+msgid "Čeština"
+msgstr ""
+
+#: src/locale/templates.js:27 src/views/page/checkout.ejs:27
+msgid "Settings"
+msgstr ""
+
+#: src/locale/templates.js:28
+msgid "Sign in"
+msgstr ""
+
+#: src/locale/templates.js:29
+msgid "Cancel"
+msgstr "Atcelt"
+
+#~ msgid "MM"
+#~ msgstr "MM"
+
+#~ msgid "YY"
+#~ msgstr "GG"
+
+#~ msgid "approved"
+#~ msgstr "Maksājums apstiprināts"
+
+#~ msgid "declined"
+#~ msgstr "Maksājums noraidīts"
+
+#~ msgid "help_cvv"
+#~ msgstr "3 cipari no aizmugures"
+
+#~ msgid "help_card_number"
+#~ msgstr "Kartes numurs ir 11-19 cipari kartes priekšējā daļā"
+
+#~ msgid "help_expire"
+#~ msgstr "Derīguma mēnesis un gads norādīti kartes prieksējā daļā."
+
+#~ msgid "help_autopayment"
+#~ msgstr ""
+#~ "Atļaut automatiskus maksājumus no jūsu kartes norādāita tirgotāja labā"
+
+#~ msgid "help_3ds"
+#~ msgstr ""
+#~ "Tagad jūs tiksiet novīrzīts uz jūsu bankas 3DSecure autentifikācijas "
+#~ "lapu. Ja jūs nenovīrzīja, lūdzu atsaukties <a href='javascript:"
+#~ "void(0)'>link</a>."
+
+#~ msgid "info_verification"
+#~ msgstr ""
+#~ "Jūs varat saņemt kodu ar bankas sms paziņojumu, internetbankā vai no jūsu "
+#~ "bankas klientu atbalsta dienesta"
+
+#~ msgid "info_expire"
+#~ msgstr ""
+#~ "Derīga līdz mēneša un gada beigām, kas norādīti jūsu kredītkartes "
+#~ "priekšējā daļā"
+
+#~ msgid "info_card_number"
+#~ msgstr "Kartes numurs 14-19 cipari jūsu kredītkartes priekšējā daļā"
+
+#~ msgid "info_cvv"
+#~ msgstr "CVV2/CVC2 kods ir trīs cipari jūsu kredītkartes aizmugurē"
+
+#~ msgid "card"
+#~ msgstr "Visa/MC"
+
+#~ msgid "emoney"
+#~ msgstr "Elektroniskā nauda"
+
+#~ msgid "ibank"
+#~ msgstr "Internet-banking"
+
+#~ msgid "credit"
+#~ msgstr "Kredits"
+
+#~ msgid "loans"
+#~ msgstr "Aizdevums"
+
+#~ msgid "sepa"
+#~ msgstr "Direct debit"
+
+#~ msgid "liqpay_cash"
+#~ msgstr "Privatbank cashbox"
+
+#~ msgid "cash"
+#~ msgstr "Cash"
+
+#~ msgid "UAH"
+#~ msgstr "UAH"
+
+#~ msgid "RUB"
+#~ msgstr "RUB"
+
+#~ msgid "valid_required"
+#~ msgstr "Obligāts lauks"
+
+#~ msgid "valid_matches"
+#~ msgstr "Lauki nesakrīt"
+
+#~ msgid "valid_notmatches"
+#~ msgstr "Lauki, kuriem nav jāsakrīt"
+
+#~ msgid "valid_pattern"
+#~ msgstr "Lauks nederīgs"
+
+#~ msgid "valid_email"
+#~ msgstr "Nepareizs e-pasts"
+
+#~ msgid "valid_num"
+#~ msgstr "Laukā jābūt tikai cipariem"
+
+#~ msgid "valid_ccard"
+#~ msgstr "Kredītkartes numurs ir nepareizs"
+
+#~ msgid "valid_url"
+#~ msgstr "Lauks nederīgs"
+
+#~ msgid "valid_phone"
+#~ msgstr "Nepareizs tālruņa numurs"
+
+#~ msgid "valid_account_num"
+#~ msgstr "Nepareizs konta numurs"
+
+#~ msgid "valid_password_strength"
+#~ msgstr "Parolē jābūt burtiem un cipariem"
+
+#~ msgid "valid_password"
+#~ msgstr "Parolei jāsatur ne mazāk par 7 zīmēm"
+
+#~ msgid "valid_mfo"
+#~ msgstr "Laukam jāsatur 6 cipari"
+
+#~ msgid "valid_okpo"
+#~ msgstr "Laukam jāsatur cipari, mazāk par 15 zimēm"
+
+#~ msgid "valid_exp_date"
+#~ msgstr "Nepareizs derīguma datums"
+
+#~ msgid "valid_verify_limit"
+#~ msgstr "Jūs pārsniedzat mēģinājumu skaitu"
+
+#~ msgid "valid_verify_invalid_code"
+#~ msgstr "Nepareizs kods"
+
+#~ msgid "valid_exact_length"
+#~ msgstr "Kodam jābut minimāli 4 zīmēm"
+
+#~ msgid "valid_amount"
+#~ msgstr "Neatļauta summa"
+
+#~ msgid "valid_cvv2"
+#~ msgstr "Nepareizs CVV2 formāts"
+
+#~ msgid "valid_numrange"
+#~ msgstr "Transfer amount limit exceeded"
+
+#~ msgid "valid_min_length"
+#~ msgstr "Pārāk maz simbolu"
+
+#~ msgid "valid_max_length"
+#~ msgstr "Pārāk maz elementu"
+
+#~ msgid "II"
+#~ msgstr "Momentāla maksājuma atlikšana"
+
+#~ msgid "PP"
+#~ msgstr "Apmaksa pa daļām"
+
+#~ msgid "Please wait"
+#~ msgstr "Lūdzu gaidiet"
+
+#~ msgid "Card verification"
+#~ msgstr "Kartes pārbaude"
+
+#~ msgid "Amount is hold on your credit card account"
+#~ msgstr "Summa ir nobloķēta jūsu kartes kontā"
+
+#~ msgid "Order description"
+#~ msgstr "Pasūtījuma apraksts"
+
+#~ msgid "Amount before discount"
+#~ msgstr "Summa pirms atlaides"
+
+#~ msgid "Order amount"
+#~ msgstr "Pasūtījuma summa"
+
+#~ msgid "Total amount"
+#~ msgstr "Summa kopā"
+
+#~ msgid "Commission"
+#~ msgstr "Komisija"
+
+#~ msgid "Discount"
+#~ msgstr "Atlaide"
+
+#~ msgid "Amount after discount"
+#~ msgstr "Summa pēc atlaides"
+
+#~ msgid "Your payment is being processed"
+#~ msgstr "Jūsu maksājums tiek apstrādāts"
+
+#~ msgid "№ of payment in"
+#~ msgstr "Maksājuma Nr."
+
+#~ msgid "payment system"
+#~ msgstr "maksājumu sistēmā"
+
+#~ msgid "Return to shop web-site"
+#~ msgstr "Atgriezties veikala tīmekļa lapā"
+
+#~ msgid "Payment method"
+#~ msgstr "Apmaksas veids"
+
+#~ msgid "Name"
+#~ msgstr "Vārds"
+
+#~ msgid "Last Name"
+#~ msgstr "Uzvārds"
+
+#~ msgid "BIC"
+#~ msgstr "BIC"
+
+#~ msgid "IBAN"
+#~ msgstr "IBAN"
+
+#~ msgid "Checkout"
+#~ msgstr "Apmaksāt"
+
+#~ msgid "Card Number"
+#~ msgstr "Kartes numurs"
+
+#~ msgid "Valid thru"
+#~ msgstr "Derīga līdz"
+
+#~ msgid "CVV2/CVC2 code"
+#~ msgstr "CVV2/CVC2 kods"
+
+#~ msgid "CVV2"
+#~ msgstr "CVV2"
+
+#~ msgid "Protected by SSL"
+#~ msgstr "Aizsargāts ar SSL"
+
+#~ msgid "Email address"
+#~ msgstr "E-pasta adrese"
+
+#~ msgid "Phone"
+#~ msgstr "Tālrunis"
+
+#~ msgid "I agree with"
+#~ msgstr "Es piekritu"
+
+#~ msgid "Public offer"
+#~ msgstr "Publiskajam piedāvājumam"
+
+#~ msgid "Please enter verification code"
+#~ msgstr "Lūdzu ievadiet verifikācijas kodu"
+
+#~ msgid "verification code"
+#~ msgstr "verisfikācijas kods"
+
+#~ msgid "Regular base payment"
+#~ msgstr "Regulārs maksājums"
+
+#~ msgid "Сharged with the frequency"
+#~ msgstr "Norakstīt reizi"
+
+#~ msgid "day"
+#~ msgstr "dienā"
+
+#~ msgid "week"
+#~ msgstr "nedēļā"
+
+#~ msgid "month"
+#~ msgstr "mēnesī"
+
+#~ msgid "year"
+#~ msgstr "gadā"
+
+#~ msgid "2 weeks"
+#~ msgstr "2 nedēļas"
+
+#~ msgid "2 months"
+#~ msgstr "2 mēneši"
+
+#~ msgid "quarter"
+#~ msgstr "ceturksnis"
+
+#~ msgid "amount"
+#~ msgstr "Summa"
+
+#~ msgid "starting with the date"
+#~ msgstr "Sākas ar datumu"
+
+#~ msgid "Price"
+#~ msgstr "Cena"
+
+#~ msgid "Shop"
+#~ msgstr "Veikals"
+
+#~ msgid "The loan is approved!"
+#~ msgstr "Aizdevums apstiprināts!"
+
+#~ msgid ""
+#~ "To finish you need enter the data of your credit card and pay the first "
+#~ "installment payment in the amount of"
+#~ msgstr ""
+#~ "Lai pabeigtu, jums jāievada jūsu kredītkartes dati un jāapmaksa pirmo "
+#~ "maksājumu"
+
+#~ msgid "The loan was declined"
+#~ msgstr "Aizdevuma atteikts"
+
+#~ msgid "Unfortunately we can not give you a loan"
+#~ msgstr "Diemžēl mēs nevaram izsniegt jums aizdevumu"
+
+#~ msgid "Processing of the application"
+#~ msgstr "Pieteikuma apstrāde"
+
+#~ msgid "Your application for a loan in the processing"
+#~ msgstr "Jūsu pieteikums aizdevumam ir apstrādē"
+
+#~ msgid "We will call you back within 15 minutes on the number"
+#~ msgstr "Mēs jums atzvanīsim 15 minūšu laikā uz numuru"
+
+#~ msgid "The number of payments"
+#~ msgstr "Maksājumu numurs"
+
+#~ msgid "Personal data"
+#~ msgstr "Personas dati"
+
+#~ msgid "Resident"
+#~ msgstr "Rezidents"
+
+#~ msgid "Yes"
+#~ msgstr "Jā"
+
+#~ msgid "No"
+#~ msgstr "Nē"
+
+#~ msgid "Middle Name"
+#~ msgstr "Otrs vārds"
+
+#~ msgid "Date of birth"
+#~ msgstr "Dzimšanas datums"
+
+#~ msgid "Sex"
+#~ msgstr "Dzimums"
+
+#~ msgid "Male"
+#~ msgstr "Vīrietis"
+
+#~ msgid "Female"
+#~ msgstr "Sieviete"
+
+#~ msgid "Citizenship"
+#~ msgstr "Pilsonība"
+
+#~ msgid "ITN"
+#~ msgstr "Personas kods"
+
+#~ msgid "Social status"
+#~ msgstr "Sociālais statuss"
+
+#~ msgid "Type of employment"
+#~ msgstr "Nodarbošanās"
+
+#~ msgid "Passport data"
+#~ msgstr "Pases dati"
+
+#~ msgid "Series"
+#~ msgstr "Sērija"
+
+#~ msgid "Number"
+#~ msgstr "Numurs"
+
+#~ msgid "Date of issue"
+#~ msgstr "Izdošanas datums"
+
+#~ msgid "Agree with"
+#~ msgstr "Piekrītu"
+
+#~ msgid "conditions"
+#~ msgstr "nosacījumiem"
+
+#~ msgid "Gave me a loan"
+#~ msgstr "Dodiet man aizdevumu"
+
+#~ msgid "Order cost"
+#~ msgstr "Pasūtījuma izmaksas"
+
+#~ msgid "Amount of parts"
+#~ msgstr "Daļu daudzums"
+
+#~ msgid "Monthly fee"
+#~ msgstr "Mēneša maksa"
+
+#~ msgid "Error"
+#~ msgstr "Kļūda"
+
+#~ msgid "Sender card"
+#~ msgstr "Sūtītāja karte"
+
+#~ msgid "Recipient card"
+#~ msgstr "Saņēmēja karte"
+
+#~ msgid "Restrictions and limits:"
+#~ msgstr "Ierobežojumi un limiti:"
+
+#~ msgid "Only Ukrainian card accepted"
+#~ msgstr "Pieņem tikai ukrainas kartes"
+
+#~ msgid "Maximum transfer amount: 14999 UAH"
+#~ msgstr "Maksimāla maksājuma summua: 14999 UAH"
+
+#~ msgid "Monthly transfer limit: 149999 UAH"
+#~ msgstr "Pārvedumu mēneša limits: 149999 UAH"
+
+#~ msgid "Fee"
+#~ msgstr "Maksa"
+
+#~ msgid "I confirm that I have read to a"
+#~ msgstr "Es apliecinu, ka esmu izlasījis (-jusi)"
+
+#~ msgid "p2p_offer_url"
+#~ msgstr "/static_common/v1/p2p_offer.pdf"
+
+#~ msgid "and agree to its terms"
+#~ msgstr "un piekrītu noteikumiem"
+
+#~ msgid "Send money"
+#~ msgstr "Sūtīt naudu"
+
+#~ msgid "Congratulations"
+#~ msgstr "Apsveicam"
+
+#~ msgid "Transfer completed successfully"
+#~ msgstr "Maksājums veiksmīgs"
+
+#~ msgid "Need receipt?"
+#~ msgstr "Vajag kvīti?"
+
+#~ msgid "Send receipt"
+#~ msgstr "Sūtīt kvīti"
+
+#~ msgid "Try again"
+#~ msgstr "Mēģiniet velreiz"
+
+#~ msgid "We are sorry"
+#~ msgstr "Atvainojiet"
+
+#~ msgid "Transfer declined"
+#~ msgstr "Maksājums neveiksmīgs"
+
+#~ msgid "Decline reason"
+#~ msgstr "Atteikuma iemesls"
+
+#~ msgid ""
+#~ "Sender or recipient card daily limit exceeded, or one of the cards was "
+#~ "rejected by the payment system"
+#~ msgstr ""
+#~ "Ir pārsniegt sūtītājs vai saņēmēja kartes dienas limits, vai vienu no "
+#~ "kartēm noraidīja maksājumu sistēma"
+
+#~ msgid "Please wait, your transfer is being processed"
+#~ msgstr "Lūdzu gaidiet, jūsu maksājums tiek apstrādāts"
+
+#~ msgid "Maximum transfer amount: 5000 UAH"
+#~ msgstr "Maksimāla maksājuma summua: 5000 UAH"
+
+#~ msgid "Monthly transfer limit: 20000 UAH"
+#~ msgstr "Pārvedumu mēneša limits: 20000 UAH"
+
+#~ msgid "p2p_currency_value"
+#~ msgstr "UAH"
+
+#~ msgid "p2p_currency_name"
+#~ msgstr "uah"

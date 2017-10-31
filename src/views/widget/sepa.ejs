@@ -1,0 +1,28 @@
+<div class="form-group-sepa">
+    <input type="hidden" name="payment_system" value="sepa">
+    <div class="form-group row">
+        <div class="col-xs-12">
+                <input value="" type="text" spellcheck="false" required
+                       name="sender_name" class="form-control input-lg" placeholder="Name">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-12">
+            <input value="" type="text" spellcheck="false" required
+                   name="sender_familyName" class="form-control input-lg" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-12">
+            <input value="" type="text" spellcheck="false" required
+                   name="bic" class="form-control input-lg" placeholder="BIC">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-12">
+            <input value="" type="text" spellcheck="false" required
+                   name="iban" class="form-control input-lg" placeholder="IBAN">
+        </div>
+    </div>
+    <%= include( 'block/button.submit' ) %>
+</div>

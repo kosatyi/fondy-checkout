@@ -1,0 +1,16 @@
+<div class="page-wrapper">
+    <div class="checkout-container opened" control="ui.state,ui.tooltip">
+        <%= include( 'block/header' ) %>
+        <%= include( 'block/product' ) %>
+        <div class="checkout-form">
+            <form data-form autocomplete="off">
+                <div class="form-group hidden" data-message=""></div>
+                <%= include( 'block/form.custom' ) %>
+                <%= include( 'block/list.payment.methods' ) %>
+                <div class="form-group-wrapper form-group-mm" data-form-wrapper>
+                    <%= include('widget/card') %>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

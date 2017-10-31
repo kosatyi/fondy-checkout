@@ -1,0 +1,22 @@
+<div class="form-group row">
+    <% if(view.attr('field.amount')) { %>
+    <div class="col-sm-12">
+        <div class="input-group input-group-lg">
+            <input type="number" min="1" step="0.01" name="amount" data-valid="amount"
+                   data-bind="params.amount" value="<%= params.attr('amount') %>" required class="form-control"
+                   placeholder="<%=_('Pay amount')%>">
+            <span class="input-group-addon"><%= _(params.attr('currency')) %></span>
+        </div>
+    </div>
+    <% } else { %>
+    <input type="hidden" name="amount" value="<%= params.attr('amount') %>">
+    <input type="hidden" name="currency" value="<%= params.attr('currency') %>">
+    <div class="col-xs-6 text-muted">
+        <%=_('Order amount')%>:
+    </div>
+    <div class="col-xs-6 text-bold text-right">
+        <%= params.attr('amount') %>
+        <sup><%= _( params.attr('currency') ) %></sup>
+    </div>
+    <% } %>
+</div>

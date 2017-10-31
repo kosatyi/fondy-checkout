@@ -1,0 +1,45 @@
+<% var list = [] %>
+<%
+    list.push({name:'Credit card',widget:'card',type:'card'});
+    list.push({name:'Sepa',widget:'sepa',type:'sepa'});
+    list.push({name:'Skrill',widget:'ibank',type:'skrill'});
+    list.push({name:'Paypal',widget:'ibank',type:'paypal'});
+    list.push({name:'Privat 24',widget:'ibank',type:'p24'});
+    list.push({name:'Alpha bank',widget:'ibank',type:'alpha'});
+    list.push({name:'Trustly',widget:'ibank',type:'trustly'});
+    list.push({name:'Yandex',widget:'imoney',type:'yandex'});
+    list.push({name:'WebMoney',widget:'imoney',type:'webmoney'});
+    list.push({name:'Qiwi',widget:'imoney',type:'qiwi'});
+    list.push({name:'Liqpay',widget:'imoney',type:'liqpay-cash'});
+%>
+<div class="form-group-menu form-group-mm hidden" data-payment-methods
+     control="ui.toggle.list" data-self="selected" data-class="active">
+    <div class="form-group row has-feedback-left search">
+        <div class="col-xs-12">
+            <div class="relative">
+                <input type="search" placeholder="<%=_('Find Payment Methods')%>" class="form-control input-lg" />
+                <i class="form-control-feedback fa fa-search"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <% this.each(list,function(item){ %>
+        <div class="col-xs-6">
+            <a href="#" data-action="widget:<%=item.widget%>"
+               data-type="<%=item.type%>" class="thumbnail text-center">
+                <%=item.name%>
+            </a>
+        </div>
+    <% }) %>
+    </div>
+    <div class="form-group-shadow"></div>
+    <div class="form-group form-group-button row">
+        <div class="button-group">
+            <div class="col-xs-3">
+                <a href="#" data-action="menu:hide" class="btn btn-lg btn-block btn-default">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
