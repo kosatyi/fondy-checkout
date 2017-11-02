@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-02 14:40+0200\n"
+"POT-Creation-Date: 2017-11-02 14:46+0200\n"
 "PO-Revision-Date: 2016-11-09 18:35+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -56,83 +56,83 @@ msgid "Email tooltip"
 msgstr ""
 
 #: src/locale/templates.js:10
-msgid "Regular payment"
-msgstr ""
-
-#: src/locale/templates.js:11 src/views/block/form.recurring.ejs:16
-msgid "Frequency"
-msgstr ""
-
-#: src/locale/templates.js:12 src/views/block/form.recurring.ejs:24
-msgid "every day"
-msgstr ""
-
-#: src/locale/templates.js:13
-msgid "every week"
-msgstr ""
-
-#: src/locale/templates.js:14 src/views/block/form.recurring.ejs:26
-msgid "every 2 weeks"
-msgstr ""
-
-#: src/locale/templates.js:15
-msgid "every month"
-msgstr ""
-
-#: src/locale/templates.js:16 src/views/block/form.recurring.ejs:28
-msgid "every 2 month"
-msgstr ""
-
-#: src/locale/templates.js:17
-msgid "every quarter"
-msgstr ""
-
-#: src/locale/templates.js:18
-msgid "Amount"
-msgstr "Amount"
-
-#: src/locale/templates.js:19
-msgid "Starting date"
-msgstr ""
-
-#: src/locale/templates.js:20
-msgid "YYYY-MM-DD"
-msgstr ""
-
-#: src/locale/templates.js:21
-msgid "Find Payment Methods"
-msgstr ""
-
-#: src/locale/templates.js:22
 msgid "Show product info"
 msgstr ""
 
-#: src/locale/templates.js:23
+#: src/locale/templates.js:11
 msgid "English"
 msgstr ""
 
-#: src/locale/templates.js:24
+#: src/locale/templates.js:12
 msgid "Українська"
 msgstr ""
 
-#: src/locale/templates.js:25
+#: src/locale/templates.js:13
 msgid "Latviešu"
 msgstr ""
 
-#: src/locale/templates.js:26
+#: src/locale/templates.js:14
 msgid "Français"
 msgstr ""
 
-#: src/locale/templates.js:27
+#: src/locale/templates.js:15
 msgid "Čeština"
 msgstr ""
 
-#: src/locale/templates.js:28
+#: src/locale/templates.js:16
 msgid "Change language"
 msgstr ""
 
-#: src/locale/templates.js:29 src/views/block/list.cards.ejs:1
+#: src/locale/templates.js:17 src/views/block/list.cards.ejs:1
 msgid "Saved session cards"
+msgstr ""
+
+#: src/locale/templates.js:18
+msgid "Regular payment"
+msgstr ""
+
+#: src/locale/templates.js:19 src/views/block/form.recurring.ejs:16
+msgid "Frequency"
+msgstr ""
+
+#: src/locale/templates.js:20 src/views/block/form.recurring.ejs:24
+msgid "every day"
+msgstr ""
+
+#: src/locale/templates.js:21
+msgid "every week"
+msgstr ""
+
+#: src/locale/templates.js:22 src/views/block/form.recurring.ejs:26
+msgid "every 2 weeks"
+msgstr ""
+
+#: src/locale/templates.js:23
+msgid "every month"
+msgstr ""
+
+#: src/locale/templates.js:24 src/views/block/form.recurring.ejs:28
+msgid "every 2 month"
+msgstr ""
+
+#: src/locale/templates.js:25
+msgid "every quarter"
+msgstr ""
+
+#: src/locale/templates.js:26
+msgid "Amount"
+msgstr "Amount"
+
+#: src/locale/templates.js:27
+msgid "Starting date"
+msgstr ""
+
+#: src/locale/templates.js:28
+msgid "YYYY-MM-DD"
+msgstr ""
+
+#: src/locale/templates.js:29
+msgid "Find Payment Methods"
 msgstr ""
 
 #: src/locale/templates.js:30
