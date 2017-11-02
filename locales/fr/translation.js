@@ -1,7 +1,7 @@
-{
+(function(n,k,v){this[n]=this[n]||{};this[n][k]=v})("i18n","fr",{
     "Pay": "",
     "Pay amount": "",
-    "Order amount": "Pasūtījuma summa",
+    "Order amount": "Order amount",
     "CVV2/CVC2 code is three-digit code on the back of your credit card": "",
     "MM / YY": "",
     "Valid thru is the expiry month and year indicated on the front side of your credit card": "",
@@ -16,7 +16,7 @@
     "every month": "",
     "every 2 month": "",
     "every quarter": "",
-    "Amount": "Summa",
+    "Amount": "Amount",
     "Starting date": "",
     "YYYY-MM-DD": "",
     "Show product info": "",
@@ -30,6 +30,6 @@
     "Find Payment Methods": "",
     "Back to merchant": "",
     "OTP": "",
-    "Confirm": "Apstiprināt",
-    "Cancel": "Atcelt"
-}
+    "Confirm": "Confirm",
+    "Cancel": "Cancel"
+});

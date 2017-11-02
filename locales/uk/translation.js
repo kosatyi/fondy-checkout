@@ -1,4 +1,4 @@
-{
+(function(n,k,v){this[n]=this[n]||{};this[n][k]=v})("i18n","uk",{
     "Pay": "",
     "Pay amount": "",
     "Order amount": "Сума до сплати",
@@ -32,4 +32,4 @@
     "OTP": "",
     "Confirm": "Підтвердити",
     "Cancel": "Скасувати"
-}
+});

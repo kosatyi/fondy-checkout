@@ -47,8 +47,6 @@
 
     $.createModel( 'view' , 'base' , {
 
-
-
     });
 
     $.createModel( 'params' , 'base' , {

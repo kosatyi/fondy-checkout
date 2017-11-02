@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "main": "deploy.js",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "bower": "^1.8.0",
@@ -13,6 +13,9 @@
     "gulp-cssmin": "^0.2.0",
     "gulp-flatten": "^0.3.1",
     "gulp-html-to-js": "0.0.5",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-json-to-js": "^1.0.2",
+    "gulp-json-wrapper": "^1.0.0",
     "gulp-less": "^3.3.2",
     "gulp-uglify": "^3.0.0",
     "gulp-wrap": "^0.13.0",

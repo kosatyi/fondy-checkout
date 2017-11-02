@@ -630,7 +630,6 @@
         return deparam(qs, true, true);
     };
 })(jQuery);
-
 (function ($) {
     var cache = {};
     $.locale = {
@@ -641,7 +640,7 @@
         data: {}
     };
     $.locale.load = function (lang) {
-        cache[lang] = cache[lang] || $.ajax({
+        cache[lang] = cache[lang] || this.i18n(lang)  || $.ajax({
                 context: this,
                 url: this.path.concat(lang).concat(this.file)
             });
@@ -649,6 +648,11 @@
             this.data = data;
         });
         return cache[lang];
+    };
+    $.locale.i18n = function(lang){
+        if( window['i18n'] && window['i18n'][lang] ){
+            return $.Deferred().resolve(window['i18n'][lang]);
+        }
     };
     $.locale.lang = function (lang) {
         this.current = lang;

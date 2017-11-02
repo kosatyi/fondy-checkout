@@ -1,4 +1,4 @@
-{
+(function(n,k,v){this[n]=this[n]||{};this[n][k]=v})("i18n","lv",{
     "Pay": "",
     "Pay amount": "",
     "Order amount": "Pasūtījuma summa",
@@ -32,4 +32,4 @@
     "OTP": "",
     "Confirm": "Apstiprināt",
     "Cancel": "Atcelt"
-}
+});
