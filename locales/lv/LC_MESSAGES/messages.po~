@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-02 13:10+0200\n"
+"POT-Creation-Date: 2017-11-02 14:40+0200\n"
 "PO-Revision-Date: 2016-12-02 13:09+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -100,52 +100,52 @@ msgid "YYYY-MM-DD"
 msgstr ""
 
 #: src/locale/templates.js:21
-msgid "Show product info"
-msgstr ""
-
-#: src/locale/templates.js:22
-msgid "English"
-msgstr ""
-
-#: src/locale/templates.js:23
-msgid "Українська"
-msgstr ""
-
-#: src/locale/templates.js:24
-msgid "Latviešu"
-msgstr ""
-
-#: src/locale/templates.js:25
-msgid "Français"
-msgstr ""
-
-#: src/locale/templates.js:26
-msgid "Čeština"
-msgstr ""
-
-#: src/locale/templates.js:27
-msgid "Change language"
-msgstr ""
-
-#: src/locale/templates.js:28 src/views/block/list.cards.ejs:1
-msgid "Saved session cards"
-msgstr ""
-
-#: src/locale/templates.js:29
 msgid "Find Payment Methods"
 msgstr ""
 
+#: src/locale/templates.js:22
+msgid "Show product info"
+msgstr ""
+
+#: src/locale/templates.js:23
+msgid "English"
+msgstr ""
+
+#: src/locale/templates.js:24
+msgid "Українська"
+msgstr ""
+
+#: src/locale/templates.js:25
+msgid "Latviešu"
+msgstr ""
+
+#: src/locale/templates.js:26
+msgid "Français"
+msgstr ""
+
+#: src/locale/templates.js:27
+msgid "Čeština"
+msgstr ""
+
+#: src/locale/templates.js:28
+msgid "Change language"
+msgstr ""
+
+#: src/locale/templates.js:29 src/views/block/list.cards.ejs:1
+msgid "Saved session cards"
+msgstr ""
+
 #: src/locale/templates.js:30
-msgid "OTP"
+msgid "Back to merchant"
 msgstr ""
 
 #: src/locale/templates.js:31
-msgid "Confirm"
-msgstr "Apstiprināt"
+msgid "OTP"
+msgstr ""
 
 #: src/locale/templates.js:32
-msgid "Back to merchant"
-msgstr ""
+msgid "Confirm"
+msgstr "Apstiprināt"
 
 #: src/locale/templates.js:33
 msgid "Cancel"

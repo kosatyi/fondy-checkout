@@ -12,7 +12,6 @@
         getInstance:function(){
             if(!this.constructor.instance){
                 this.constructor.instance = $checkout('Api');
-                this.constructor.instance.setOrigin('https://api.dev.fondy.eu');
             }
             return this.constructor.instance;
         },

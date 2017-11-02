@@ -1,6 +1,7 @@
 {
-  "name": "app",
-  "main": "index.js",
+  "name": "fondy-checkout",
+  "version": "1.0.0",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "bower": "^1.8.0",
