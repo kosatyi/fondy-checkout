@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-03 17:06+0200\n"
+"POT-Creation-Date: 2017-11-03 17:20+0200\n"
 "PO-Revision-Date: 2016-11-09 18:35+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,41 +18,41 @@ msgstr ""
 "X-Generator: Poedit 1.8.7.1\n"
 
 #: src/locale/templates.js:1
-msgid "Pay amount"
-msgstr ""
-
-#: src/locale/templates.js:2
-msgid "Order amount"
-msgstr "Order amount"
-
-#: src/locale/templates.js:3
 msgid "Pay"
 msgstr ""
 
+#: src/locale/templates.js:2
+msgid "Pay amount"
+msgstr ""
+
+#: src/locale/templates.js:3
+msgid "Order amount"
+msgstr "Order amount"
+
 #: src/locale/templates.js:4
-msgid "MM / YY"
+msgid "CVV2/CVC2 code is three-digit code on the back of your credit card"
 msgstr ""
 
 #: src/locale/templates.js:5
+msgid "MM / YY"
+msgstr ""
+
+#: src/locale/templates.js:6
 msgid ""
 "Valid thru is the expiry month and year indicated on the front side of your "
 "credit card"
 msgstr ""
 
-#: src/locale/templates.js:6
-msgid "CVV2/CVC2 code is three-digit code on the back of your credit card"
-msgstr ""
-
 #: src/locale/templates.js:7
-msgid "Email tooltip"
-msgstr ""
-
-#: src/locale/templates.js:8
 msgid "Card number"
 msgstr ""
 
-#: src/locale/templates.js:9
+#: src/locale/templates.js:8
 msgid "Card number is 14-19 digits on the front side of your credit card"
+msgstr ""
+
+#: src/locale/templates.js:9
+msgid "Email tooltip"
 msgstr ""
 
 #: src/locale/templates.js:10
@@ -108,16 +108,16 @@ msgid "Find Payment Methods"
 msgstr ""
 
 #: src/locale/templates.js:23
-msgid "OTP"
+msgid "Back to merchant"
 msgstr ""
 
 #: src/locale/templates.js:24
-msgid "Confirm"
-msgstr "Confirm"
+msgid "OTP"
+msgstr ""
 
 #: src/locale/templates.js:25
-msgid "Back to merchant"
-msgstr ""
+msgid "Confirm"
+msgstr "Confirm"
 
 #: src/locale/templates.js:26
 msgid "Cancel"

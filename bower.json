@@ -7,8 +7,6 @@
     "ipsp-js-sdk": "master",
     "roboto-fontface": "^0.7.0",
     "jquery-mask-plugin": "jquery-mask#^1.14.12",
-    "moment": "^2.19.1",
-    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
     "bootstrap-validator": "^0.11.9",
     "flag-icon-css": "^2.8.0",
     "animate.less": "*"

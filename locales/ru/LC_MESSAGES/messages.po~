@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-03 16:53+0200\n"
+"POT-Creation-Date: 2017-11-03 17:06+0200\n"
 "PO-Revision-Date: 2017-06-06 17:29+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,16 +18,16 @@ msgstr ""
 "X-Generator: Poedit 1.8.11\n"
 
 #: src/locale/templates.js:1
-msgid "Pay"
-msgstr ""
-
-#: src/locale/templates.js:2
 msgid "Pay amount"
 msgstr ""
 
-#: src/locale/templates.js:3
+#: src/locale/templates.js:2
 msgid "Order amount"
 msgstr "Сумма к оплате"
+
+#: src/locale/templates.js:3
+msgid "Pay"
+msgstr ""
 
 #: src/locale/templates.js:4
 msgid "MM / YY"
@@ -108,16 +108,16 @@ msgid "Find Payment Methods"
 msgstr ""
 
 #: src/locale/templates.js:23
-msgid "Back to merchant"
-msgstr ""
-
-#: src/locale/templates.js:24
 msgid "OTP"
 msgstr ""
 
-#: src/locale/templates.js:25
+#: src/locale/templates.js:24
 msgid "Confirm"
 msgstr "Подтвердить"
+
+#: src/locale/templates.js:25
+msgid "Back to merchant"
+msgstr ""
 
 #: src/locale/templates.js:26
 msgid "Cancel"
