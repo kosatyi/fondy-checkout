@@ -658,6 +658,10 @@
         this.current = lang;
         return this;
     };
+    $.locale.getBrowserLanguage = function () {
+        var n = window.navigator;
+        return (n.language || n.userLanguage || n.browserLanguage || '').toLowerCase().split('-')[0];
+    };
     $.locale.get = function (value) {
         return this.data[value] || value;
     };
