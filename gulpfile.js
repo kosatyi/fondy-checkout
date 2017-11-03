@@ -1,9 +1,9 @@
-var gulp    = require('gulp');
-var less    = require('gulp-less');
-var concat  = require('gulp-concat');
-var uglify  = require('gulp-uglify');
-var cssmin  = require('gulp-cssmin');
-var flatten = require('gulp-flatten');
+var gulp     = require('gulp');
+var less     = require('gulp-less');
+var concat   = require('gulp-concat');
+var uglify   = require('gulp-uglify');
+var cssmin   = require('gulp-cssmin');
+var flatten  = require('gulp-flatten');
 var del      = require('del');
 var wrap     = require('gulp-wrap');
 var htmlToJs = require('gulp-html-to-js');
@@ -43,7 +43,7 @@ gulp.task('gettext', function(){
             keywords:['_'],
             source:['./src/views','./src/js/app','./src/locale'],
             target:'./locales',
-            locales:['ru','en','uk','lv','cs','fr']
+            locales:['ru','en','uk','lv','cs','fr','sk']
         },
         javascript:{
 
@@ -60,15 +60,27 @@ gulp.task('translation', ['gettext'] , function(){
 });
 
 gulp.task('bootstrap-less', function(){
-    return gulp.src(['bower_components/bootstrap/less/**']).pipe(gulp.dest('src/less/bootstrap'))
+    return gulp.src(['bower_components/bootstrap/less/**']).pipe(gulp.dest('src/less/bootstrap'));
 });
 
 gulp.task('font-awesome-less', function(){
-    return gulp.src(['bower_components/font-awesome/less/**']).pipe(gulp.dest('src/less/font-awesome'))
+    return gulp.src(['bower_components/font-awesome/less/**']).pipe(gulp.dest('src/less/font-awesome'));
 });
 
+gulp.task('flag-icons-less', function(){
+    return gulp.src(['bower_components/flag-icon-css/less/**']).pipe(gulp.dest('src/less/flag-icons'));
+});
 
-gulp.task('less-import', ['bootstrap-less','font-awesome-less']);
+gulp.task('animate-less', function(){
+    return gulp.src(['bower_components/animate.less/source/**']).pipe(gulp.dest('src/less/animate'));
+});
+
+gulp.task('less-import', [
+    'bootstrap-less',
+    'font-awesome-less',
+    'flag-icons-less',
+    'animate-less'
+]);
 
 gulp.task('less', ['less-import'], function(){
     return gulp.src(['src/less/*.less']).pipe(less())
@@ -77,7 +89,11 @@ gulp.task('less', ['less-import'], function(){
         .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('img', function(){
+gulp.task('flags', function(){
+    return gulp.src(['bower_components/flag-icon-css/flags/**']).pipe(gulp.dest('dist/flags'));
+});
+
+gulp.task('images', function(){
     return gulp.src(['src/img/*.*']).pipe(gulp.dest('dist/img'));
 });
 
@@ -92,34 +108,35 @@ gulp.task('views', function() {
         .pipe(gulp.dest('src/js/app/'));
 });
 
-gulp.task('watcher', function(){
-    gulp.watch(['src/js/**/*.js','bower_components/**/*.js','src/**/*.ejs'],['app','translation']);
-    gulp.watch(['src/**/*.less'],['less']);
-});
 
-gulp.task('app', ['views'] ,  function(){
+gulp.task('app', ['views'], function(){
     return combineFiles('checkout.js',[
         'bower_components/jquery/dist/jquery.js',
         'bower_components/bootstrap/dist/js/bootstrap.js',
         'bower_components/jquery-mask-plugin/dist/jquery.mask.js',
         'bower_components/ipsp-js-sdk/dist/checkout.js',
-        //'bower_components/moment/min/moment-with-locales.js',
-        //'bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js',
         'src/js/lib/bootstrap.validator.js',
         'src/js/lib/jquery.control.js',
         'src/js/lib/jquery.control.payment.js',
-        'src/js/app/views.js',
         'src/js/app/index.js',
-        'src/js/app/router.js'
+        'src/js/app/router.js',
+        'src/js/app/views.js'
     ],'dist/js');
+});
+
+gulp.task('watcher', function(){
+    gulp.watch(['src/**/*.ejs'],['views']);
+    gulp.watch(['bower_components/**/*.js', 'src/js/**/*.js'],['app']);
+    gulp.watch(['src/less/*.less','src/less/source/*.less'],['less']);
+    gulp.watch(['locales/**/*.po'],['translation']);
 });
 
 gulp.task('default', [
     'clean',
-    'less-import',
-    'less',
+    'images',
+    'flags',
     'fonts',
+    'less',
     'translation',
-    'img',
     'app'
 ]);

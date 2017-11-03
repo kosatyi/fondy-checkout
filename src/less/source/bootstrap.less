@@ -1,48 +1,85 @@
-// Core variables and mixins
-@import "../bootstrap/variables.less";
-@import "../bootstrap/mixins.less";
-// Reset and dependencies
-@import "../bootstrap/normalize.less";
-@import "../bootstrap/print.less";
-@import "../bootstrap/glyphicons.less";
-// Core CSS
-@import "../bootstrap/scaffolding.less";
-@import "../bootstrap/type.less";
-@import "../bootstrap/code.less";
-@import "../bootstrap/grid.less";
-@import "../bootstrap/tables.less";
-@import "../bootstrap/forms.less";
-@import "../bootstrap/buttons.less";
-// Components
-@import "../bootstrap/component-animations.less";
-@import "../bootstrap/dropdowns.less";
-@import "../bootstrap/button-groups.less";
-@import "../bootstrap/input-groups.less";
-@import "../bootstrap/navs.less";
-@import "../bootstrap/navbar.less";
-@import "../bootstrap/breadcrumbs.less";
-@import "../bootstrap/pagination.less";
-@import "../bootstrap/pager.less";
-@import "../bootstrap/labels.less";
-@import "../bootstrap/badges.less";
-@import "../bootstrap/jumbotron.less";
-@import "../bootstrap/thumbnails.less";
-@import "../bootstrap/alerts.less";
-@import "../bootstrap/progress-bars.less";
-@import "../bootstrap/media.less";
-@import "../bootstrap/list-group.less";
-@import "../bootstrap/panels.less";
-@import "../bootstrap/responsive-embed.less";
-@import "../bootstrap/wells.less";
-@import "../bootstrap/close.less";
-// Components w/ JavaScript
-@import "../bootstrap/modals.less";
-@import "../bootstrap/tooltip.less";
-@import "../bootstrap/popovers.less";
-@import "../bootstrap/carousel.less";
-// Utility classes
-@import "../bootstrap/utilities.less";
-@import "../bootstrap/responsive-utilities.less";
+.fa.form-control-feedback {
+  line-height: @input-height-base;
+}
+
+.input-sm ~ .fa.form-control-feedback {
+  line-height: @input-height-base;
+}
+
+.input-lg ~ .fa.form-control-feedback {
+  line-height: @input-height-large;
+}
+
+.has-feedback-left .form-control {
+  padding-left: @input-height-base;
+  padding-right: @padding-base-horizontal;
+}
+
+.has-feedback-left .form-control-feedback {
+  left: 0;
+}
+
+.has-feedback-left:not(.has-error) .form-control.state-focus ~ .form-control-feedback,
+.has-feedback-left:not(.has-error) .form-control:focus ~ .form-control-feedback{
+  color: @brand-primary ;
+}
+
+.form-horizontal .has-feedback-left .form-control-feedback {
+  left: @grid-gutter-width / 2;
+}
+
+.has-feedback-left.search .relative:after{
+  display:none;
+}
+
+.has-feedback-left .relative:after{
+  font-family: FontAwesome;
+  position:absolute;
+  z-index:10;
+  top:-6px;
+  right:-7px;
+  font-size:10px;
+  line-height:10px;
+  border-radius:14px;
+  display:block;
+  padding:0;
+  width:14px;
+  height:14px;
+  line-height:14px;
+  text-align:center;
+  color:#fff;
+}
+
+.has-feedback-left.has-success .relative:after{
+  content:"\f00c";
+  background-color:@state-success-text;
+}
+
+.has-feedback-left.has-error .relative:after{
+  content:"\f068";
+  background-color:@state-danger-text;
+}
+
+.has-feedback-left .input-sm {
+  padding-left:@input-height-small;
+}
+
+.has-feedback-left .input-lg {
+  padding-left: @input-height-large;
+}
+
+.fa.form-control-feedback{
+  pointer-events: initial;
+  color: @input-color-placeholder;
+}
+
+.visa ~ .form-control-feedback.fa:before {
+  content: '\f1f0';
+}
+.mastercard ~ .form-control-feedback.fa:before {
+  content: '\f1f1';
+}
+
 
 .btn{
   &-option{
@@ -68,19 +105,80 @@
       color:darken(@brand-primary,10%);
     }
   }
+  &-checkbox{
+    background-color: transparent;
+    border-color: transparent;
+    min-width: 25px;
+    text-align: center;
+    &:focus, &:active, &:focus:active {
+      outline: 0;
+      outline: none;
+      outline-offset: 0;
+      box-shadow: none;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    &.success {
+      color: @brand-success;
+    }
+    &.danger {
+      color: @brand-danger;
+    }
+    &.warning {
+      color: @brand-warning;
+    }
+    &.uncheck {
+      color: transparent;
+      &:hover {
+        color: rgba(0, 0, 0, 0.2);
+      }
+    }
+    &.muted {
+      color: @text-muted;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  &-fn{
+    &:focus, &:active, &:focus:active {
+      outline: 0;
+      outline: none;
+      outline-offset: 0;
+      box-shadow: none;
+    }
+  }
 }
 
-.f-24{
-  font-size:24px;
+.dropdown-menu {
+  width: 100%;
+  > li {
+    > a {
+      .fa {
+        line-height: inherit;
+      }
+    }
+  }
 }
 
-.m-0{
-  margin:0;
+
+.alert {
+  #a.animated;
+  #a.delay(a, 0s);
+  #a.duration(a, 1s);
+  .tada;
+  margin-bottom: 0;
 }
 
 .alert-default {
   .alert-variant(@state-default-bg; @state-default-border; @state-default-text);
 }
+
+.btn-primary.disabled {
+  .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}
+
 
 .tooltip {
   &.in {
@@ -95,10 +193,15 @@
   }
 }
 
-.inline-block{
-  display:inline-block;
+.dropdown-backdrop {
+  z-index: 18;
 }
 
-.text-bold {
-  font-weight: @font-weight-bold;
+.panel-table {
+  .panel-variant(@panel-default-border; @panel-default-text; @panel-default-heading-bg; @panel-default-border);
+  .panel-toolbar {
+    border-bottom: 1px solid @panel-default-border;
+    padding: 8px;
+  }
 }
+

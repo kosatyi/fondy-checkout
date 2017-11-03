@@ -45,7 +45,10 @@
     });
 
     $.createModel( 'view' , 'base' , {
-
+        unpkg: 'https://unpkg.com/fondy-checkout@latest/',
+        cdn:function(url){
+            return this.unpkg.concat(url)
+        }
     });
 
     $.createModel( 'params' , 'base' , {
@@ -371,6 +374,10 @@
             this.data.params.attr('payment_system',el.getAttribute('data-type'));
             this.load_widget(value);
             this.action_menu(el,'hide');
+        },
+        action_lang:function(el,value){
+            this.config.params.lang = value;
+            this.locale().then(this.proxy('render'));
         },
         action_menu: function(el,value){
             var state = 'hidden';

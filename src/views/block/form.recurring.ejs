@@ -4,13 +4,13 @@
         <label class="checkbox">
             <input type="checkbox" name="recurring" value="true" control="ui.toggle.group"
                    data-class="hidden"
-                   data-target=".form-group-recurring">
+                   data-target="[data-form-recurring]">
             <i class="fa-calendar"></i>
             <%=_('Regular payment')%>
         </label>
     </div>
 </div>
-<div class="form-group-recurring hidden">
+<div class="form-group-wrapper hidden" data-form-recurring="">
     <div class="form-group row has-feedback-left">
         <div class="col-sm-4">
             <label class="form-control-static"><%= _('Frequency') %>:</label>

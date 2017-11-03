@@ -1,0 +1,48 @@
+html {
+  background-color: rgba(0, 0, 0, 0.02);
+  body {
+    overflow-y: scroll;
+    font-weight: @font-weight-normal;
+    background-color: transparent;
+  }
+  @media (max-width: @screen-mobile) {
+    background-color: transparent;
+  }
+}
+
+label {
+  font-weight: @font-weight-normal;
+}
+
+input[type=number]{
+  -moz-appearance: textfield;
+  &::-webkit-outer-spin-button,&::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.f-24{
+  font-size:24px;
+}
+
+.relative {
+  position: relative;
+}
+
+.m-0{
+  margin:0;
+}
+
+.inline-block{
+  display:inline-block;
+}
+.text-bold {
+  font-weight: @font-weight-bold;
+}
+.text-gray {
+  color: @gray-light;
+}
+.text-tran {
+  color: transparent;
+}

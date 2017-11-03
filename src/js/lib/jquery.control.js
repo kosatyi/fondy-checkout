@@ -650,9 +650,9 @@
         return cache[lang];
     };
     $.locale.i18n = function(lang){
-        if( window['i18n'] && window['i18n'][lang] ){
-            return $.Deferred().resolve(window['i18n'][lang]);
-        }
+        var data = {};
+        if( window['i18n'] && window['i18n'][lang] ) data = window['i18n'][lang];
+        return $.Deferred().resolveWith(this,[data]);
     };
     $.locale.lang = function (lang) {
         this.current = lang;

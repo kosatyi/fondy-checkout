@@ -1,50 +1,41 @@
 <div class="checkout-header">
     <div class="checkout-logo">
         <div class="border">
-            <img src="<%= view.alt('header.logo', 'dist/img/logo-icon.svg') %>">
+            <img src="<%= view.alt('header.logo',view.cdn('dist/img/logo-icon.svg')) %>">
         </div>
     </div>
     <div class="checkout-header-right">
-        <a href="javascript:void(0)" title="<%=_('Show product info')%>"
+        <% if(view.attr('product')) { %>
+        <a href="javascript:void(0)"
            control="ui.toggle.group"
            data-class="hidden"
-           data-target=".checkout-product"
+           data-target="[data-product-info]"
            data-placement="top" class="btn btn-option">
             <i class="fa fa-shopping-basket"></i>
         </a>
+        <% } %>
         <a href="javascript:void(0)" class="btn btn-option">
             <i class="fa fa-remove"></i>
         </a>
     </div>
     <div class="checkout-header-left">
-
+        <% if(view.attr('lang')) { %>
         <div class="dropdown inline-block">
-            <a href="javascript:void(0)" class="btn btn-option" data-toggle="dropdown">
-                <i class="fa fa-cog"></i>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a href="#" data-action="modal:otp">Русский</a></li>
-                <li><a href="#"><%= _('English') %></a></li>
-                <li><a href="#"><%= _('Українська') %></a></li>
-                <li><a href="#"><%= _('Latviešu') %></a></li>
-                <li><a href="#"><%= _('Français') %></a></li>
-                <li><a href="#"><%= _('Čeština') %></a></li>
-            </ul>
-        </div>
-
-        <div class="dropdown inline-block">
-        <a href="javascript:void(0)" title="<%=_('Change language')%>" class="btn btn-option" data-toggle="dropdown">
+        <a href="javascript:void(0)" class="btn btn-option" data-toggle="dropdown">
             <i class="fa fa-language"></i>
         </a>
         <ul class="dropdown-menu">
-            <li><a href="#" data-action="modal:otp">Русский</a></li>
-            <li><a href="#"><%= _('English') %></a></li>
-            <li><a href="#"><%= _('Українська') %></a></li>
-            <li><a href="#"><%= _('Latviešu') %></a></li>
-            <li><a href="#"><%= _('Français') %></a></li>
-            <li><a href="#"><%= _('Čeština') %></a></li>
+            <% view.each('lang',function(item,value){ %>
+                <li>
+                    <a href="#<%=value%>" data-action="lang:<%=value%>">
+                        <i class="flag-icon flag-icon-<%=value%>"></i>
+                        <%= _(value) %>
+                    </a>
+                </li>
+            <% }) %>
         </ul>
         </div>
+        <% } %>
     </div>
     <h1 class="checkout-title"><%= view.alt('header.title', document.title) %></h1>
     <h2 class="checkout-descr"><%= view.alt('header.desc', 'Your short order description') %></h2>
