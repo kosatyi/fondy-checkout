@@ -331,12 +331,14 @@
             this.on('show.bs.dropdown','show');
         },
         show: function (el, ev) {
-            if(this.loading) return;
+            if(this.loading) return false;
             this.loading = true;
+            this.menu.addClass('loading');
             this.model.cards().then(this.proxy('render'));
         },
         render:function(xhr,model){
             this.menu.html(this.template.render({model:model}));
+            this.menu.removeClass('loading');
             this.loading = false;
         }
     });
@@ -414,7 +416,7 @@
             this.model.submit(this.params).done(this.proxy('success')).fail(this.proxy('error'));
         },
         loading:function(state){
-            this.find('.checkout-form').toggleClass('loading',state);
+            this.element.toggleClass('loading',state);
         },
         success:function(xhr,model){
             if(model.sendResponse()) return;
