@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-08 15:03+0200\n"
+"POT-Creation-Date: 2017-11-09 12:29+0200\n"
 "PO-Revision-Date: 2016-11-09 18:35+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -99,12 +99,12 @@ msgstr ""
 msgid "YYYY-MM-DD"
 msgstr ""
 
-#: src/locale/templates.js:21 src/views/block/list.cards.ejs:1
-msgid "Saved session cards"
+#: src/locale/templates.js:21
+msgid "Find Payment Methods"
 msgstr ""
 
-#: src/locale/templates.js:22
-msgid "Find Payment Methods"
+#: src/locale/templates.js:22 src/views/block/list.cards.ejs:1
+msgid "Saved session cards"
 msgstr ""
 
 #: src/locale/templates.js:23

@@ -89,6 +89,10 @@ gulp.task('less', ['less-import'], function(){
         .pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('icons', function(){
+    return gulp.src(['bower_components/fondy-icons/dist/**']).pipe(gulp.dest('dist/icons'))
+});
+
 gulp.task('flags', function(){
     return gulp.src(['bower_components/flag-icon-css/flags/**']).pipe(gulp.dest('dist/flags'));
 });
@@ -134,6 +138,7 @@ gulp.task('watcher', function(){
 gulp.task('default', [
     'clean',
     'images',
+    'icons',
     'flags',
     'fonts',
     'less',
