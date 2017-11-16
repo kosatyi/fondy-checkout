@@ -1,6 +1,6 @@
 <div class="checkout-header">
     <div class="checkout-logo">
-        <div class="border">
+        <div class="border-gradient">
             <img src="<%= view.alt('header.logo',view.cdn('dist/img/logo-icon.svg')) %>">
         </div>
     </div>
@@ -14,9 +14,11 @@
             <i class="fa fa-shopping-basket"></i>
         </a>
         <% } %>
-        <a href="javascript:void(0)" class="btn btn-option">
+        <% if(view.attr('modal')) { %>
+        <a href="javascript:void(0)" data-modal-close class="btn btn-option">
             <i class="fa fa-remove"></i>
         </a>
+        <% } %>
     </div>
     <div class="checkout-header-left">
         <% if(view.attr('lang')) { %>

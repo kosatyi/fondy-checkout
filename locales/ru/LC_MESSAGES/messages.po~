@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-09 12:29+0200\n"
+"POT-Creation-Date: 2017-11-14 11:48+0200\n"
 "PO-Revision-Date: 2017-06-06 17:29+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,6 +16,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.11\n"
+
+#: src/js/app/index.js:14
+msgid "Credit card"
+msgstr ""
+
+#: src/js/app/index.js:20
+msgid "Sepa"
+msgstr ""
+
+#: src/js/app/index.js:26
+msgid "Paypal"
+msgstr ""
+
+#: src/js/app/index.js:32
+msgid "Privat 24"
+msgstr ""
+
+#: src/js/app/index.js:38
+msgid "Trustly"
+msgstr ""
+
+#: src/js/app/index.js:44
+msgid "Yandex"
+msgstr ""
+
+#: src/js/app/index.js:50
+msgid "WebMoney"
+msgstr ""
+
+#: src/js/app/index.js:56
+msgid "Qiwi"
+msgstr ""
+
+#: src/js/app/index.js:62
+msgid "Liqpay"
+msgstr ""
 
 #: src/locale/templates.js:1
 msgid "Pay"
@@ -30,96 +66,104 @@ msgid "Order amount"
 msgstr "Сумма к оплате"
 
 #: src/locale/templates.js:4
-msgid "CVV2/CVC2 code is three-digit code on the back of your credit card"
+msgid "Commision"
 msgstr ""
 
 #: src/locale/templates.js:5
+msgid "Total amount"
+msgstr "Общая сумма"
+
+#: src/locale/templates.js:6
+msgid "CVV2/CVC2 code is three-digit code on the back of your credit card"
+msgstr ""
+
+#: src/locale/templates.js:7
 msgid "MM / YY"
 msgstr ""
 
-#: src/locale/templates.js:6
+#: src/locale/templates.js:8
 msgid ""
 "Valid thru is the expiry month and year indicated on the front side of your "
 "credit card"
 msgstr ""
 
-#: src/locale/templates.js:7
+#: src/locale/templates.js:9
 msgid "Card number"
 msgstr "Номер карты"
 
-#: src/locale/templates.js:8
+#: src/locale/templates.js:10
 msgid "Card number is 14-19 digits on the front side of your credit card"
 msgstr ""
 
-#: src/locale/templates.js:9
+#: src/locale/templates.js:11
 msgid "Email tooltip"
 msgstr ""
 
-#: src/locale/templates.js:10
+#: src/locale/templates.js:12
 msgid "Regular payment"
 msgstr ""
 
-#: src/locale/templates.js:11 src/views/block/form.recurring.ejs:16
+#: src/locale/templates.js:13 src/views/block/form.recurring.ejs:16
 msgid "Frequency"
 msgstr ""
 
-#: src/locale/templates.js:12 src/views/block/form.recurring.ejs:24
+#: src/locale/templates.js:14 src/views/block/form.recurring.ejs:24
 msgid "every day"
 msgstr ""
 
-#: src/locale/templates.js:13
+#: src/locale/templates.js:15
 msgid "every week"
 msgstr ""
 
-#: src/locale/templates.js:14 src/views/block/form.recurring.ejs:26
+#: src/locale/templates.js:16 src/views/block/form.recurring.ejs:26
 msgid "every 2 weeks"
 msgstr ""
 
-#: src/locale/templates.js:15
+#: src/locale/templates.js:17
 msgid "every month"
 msgstr ""
 
-#: src/locale/templates.js:16 src/views/block/form.recurring.ejs:28
+#: src/locale/templates.js:18 src/views/block/form.recurring.ejs:28
 msgid "every 2 month"
 msgstr ""
 
-#: src/locale/templates.js:17
+#: src/locale/templates.js:19
 msgid "every quarter"
 msgstr ""
 
-#: src/locale/templates.js:18
+#: src/locale/templates.js:20
 msgid "Amount"
 msgstr "Сумма"
 
-#: src/locale/templates.js:19
+#: src/locale/templates.js:21
 msgid "Starting date"
 msgstr ""
 
-#: src/locale/templates.js:20
+#: src/locale/templates.js:22
 msgid "YYYY-MM-DD"
 msgstr ""
 
-#: src/locale/templates.js:21
-msgid "Find Payment Methods"
-msgstr ""
-
-#: src/locale/templates.js:22 src/views/block/list.cards.ejs:1
+#: src/locale/templates.js:23 src/views/block/list.cards.ejs:1
 msgid "Saved session cards"
 msgstr ""
 
-#: src/locale/templates.js:23
-msgid "Back to merchant"
-msgstr ""
-
 #: src/locale/templates.js:24
-msgid "OTP"
+msgid "Find Payment Methods"
 msgstr ""
 
 #: src/locale/templates.js:25
+msgid "Back to merchant"
+msgstr ""
+
+#: src/locale/templates.js:26
+msgid "OTP"
+msgstr ""
+
+#: src/locale/templates.js:27
 msgid "Confirm"
 msgstr "Подтвердить"
 
-#: src/locale/templates.js:26
+#: src/locale/templates.js:28
 msgid "Cancel"
 msgstr "Отменить"
 
@@ -150,9 +194,6 @@ msgstr "Slovenský"
 #: src/locale/translation.js:7
 msgid "uk"
 msgstr "Українською"
-
-#~ msgid "Total amount"
-#~ msgstr "Общая сумма"
 
 #~ msgid "MM"
 #~ msgstr "MM"

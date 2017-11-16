@@ -1,30 +1,35 @@
-(function($){
+(function ($) {
 
     $.createModel('base', {
-        call: function ( method ) {
+        call: function (method) {
             if (typeof(this[method]) == 'function') {
                 return this[method].apply(this, Array.prototype.slice.call(arguments, 1));
             }
+        },
+        model:function(name,data){
+            return $.getModel(name,data);
         }
     });
 
-    $.createModel('api', 'base',  {
-        getInstance:function(){
-            if(!this.constructor.instance){
+
+
+    $.createModel('api', 'base', {
+        getInstance: function () {
+            if (!this.constructor.instance) {
                 this.constructor.instance = $checkout('Api');
+                this.constructor.instance.setOrigin('https://api.dev.fondy.eu');
             }
             return this.constructor.instance;
         },
-        init: function (data){
+        init: function (data) {
             this.extend(data);
         },
-        send: function (endpoint,method,params){
-            var defer    = $.Deferred();
-            var model    = this;
-            this.getInstance().scope(function(){
-                this.request(endpoint,method,params).then(function(response){
+        send: function (endpoint, method, params) {
+            var defer = $.Deferred();
+            this.getInstance().scope(function () {
+                this.request(endpoint, method, params).then(function (response) {
                     defer.resolve(response);
-                },function(response){
+                }, function (response) {
                     defer.reject(response);
                 });
             });
@@ -32,34 +37,132 @@
         }
     });
 
-    $.createModel( 'api.checkout' , 'api' , {
-        app: function(params){
-            return this.send('api.checkout','app',params);
+
+    $.createModel('api.checkout', 'api', {
+        app: function (params) {
+            return this.send('api.checkout', 'app', params);
         },
-        submit: function(params){
-            return this.send( 'api.checkout.form','request', params );
+        submit: function (params) {
+            return this.send('api.checkout.form', 'request', params);
         },
-        cards:function(params){
-            return this.send( 'api.checkout.cards','get', params );
+        cards: function (params) {
+            return this.send('api.checkout.cards', 'get', params);
+        },
+        card_type_fee: function (params) {
+            return this.send('api.checkout.card_type_fee', 'get', params);
+        },
+        fee: function (params) {
+            return this.send('api.checkout.fee', 'get', params);
+        },
+        card_bin: function (params) {
+            return this.send('api.checkout.card_bin', 'get', params);
         }
     });
 
-    $.createModel( 'view' , 'base' , {
+    $.createModel('view', 'base', {
         unpkg: 'https://unpkg.com/fondy-checkout@latest/',
-        cdn:function(url){
+        cdn: function (url) {
             return this.unpkg.concat(url)
+        },
+        icon: function (size, name) {
+            return ['/', 'dist/icons/png/', size, '/', name, '.png'].join('');
+        },
+        methods: function(){
+            return this.model('payment.methods').filter(this.alt('methods', '').split(','))
         }
     });
 
-    $.createModel( 'params' , 'base' , {
-
+    $.createModel('payment.methods', 'view', {
+        defaults: [
+            {
+                name: _('Credit card'),
+                widget: 'card',
+                type: 'card',
+                icon: 'visa'
+            },
+            {
+                name: _('Sepa'),
+                widget: 'sepa',
+                type: 'sepa',
+                icon: 'sepa'
+            },
+            {
+                name: _('Paypal'),
+                widget: 'ibank',
+                type: 'paypal',
+                icon: 'paypal'
+            },
+            {
+                name: _('Privat 24'),
+                widget: 'ibank',
+                type: 'p24',
+                icon: 'privat24'
+            },
+            {
+                name: _('Trustly'),
+                widget: 'ibank',
+                type: 'trustly',
+                icon: 'trustly'
+            },
+            {
+                name: _('Yandex'),
+                widget: 'imoney',
+                type: 'yandex',
+                icon: 'yamoney_icon'
+            },
+            {
+                name: _('WebMoney'),
+                widget: 'imoney',
+                type: 'webmoney',
+                icon: 'webmoney'
+            },
+            {
+                name: _('Qiwi'),
+                widget: 'imoney',
+                type: 'qiwi',
+                icon: 'qiwi'
+            },
+            {
+                name: _('Liqpay'),
+                widget: 'imoney',
+                type: 'liqpay-cash',
+                icon: 'liqpay_cash'
+            }
+        ],
+        icon: function (size) {
+            return this._super(size,this.attr('icon'));
+        },
+        get:function(field,value){
+            var prop,list=this.defaults;
+            for (prop in list) {
+                if (list.hasOwnProperty(prop)){
+                    if(list[prop][field] == value){
+                        return this.instance(list[prop]);
+                    }
+                }
+            }
+        },
+        filter: function(values){
+            var prop, field = 'type', result = [];
+            for (prop in values) {
+                if (values.hasOwnProperty(prop)){
+                    if(prop = this.get(field,values[prop])){
+                        result.push(prop.data);
+                    }
+                }
+            }
+            return this.instance(result);
+        }
     });
+
+
+    $.createModel('params', 'base', {});
 
 })(jQuery);
 
-(function($){
+(function ($) {
 
-    $.createControl('ui.base' , {
+    $.createControl('ui.base', {
         deparam: function (obj) {
             var prop;
             var result = {};
@@ -84,28 +187,28 @@
             }
             return result;
         },
-        getView: function (name,folder) {
-            return $.ejs([folder||'page',name].join('/'));
+        getView: function (name, folder) {
+            return $.ejs([folder || 'page', name].join('/'));
         },
-        getModel: function(name,data){
-            return $.getModel(name,data);
+        getModel: function (name, data) {
+            return $.getModel(name, data);
         },
-        toStrictType:function(value){
+        toStrictType: function (value) {
             var numeric = /^\-?[1-9]+(\.[0-9]+)?$/;
-            var types   = {'true':true,'false':false,'null':null};
-            if( numeric.test(value) ) return +value;
+            var types = {'true': true, 'false': false, 'null': null};
+            if (numeric.test(value)) return +value;
             return value in types ? types[value] : value;
         },
-        getMetaFields:function(){
+        getMetaFields: function () {
             var toStrictType = this.toStrictType;
-            return this.find('meta[name],param[name],input[name]').map(function(i,e){
-                return{
-                    name  : e.getAttribute('name'),
-                    value : toStrictType(e.getAttribute('value') || e.getAttribute('content'))
+            return this.find('meta[name],param[name],input[name]').map(function (i, e) {
+                return {
+                    name: e.getAttribute('name'),
+                    value: toStrictType(e.getAttribute('value') || e.getAttribute('content'))
                 }
             }).toArray();
         },
-        getMetaConfig:function(){
+        getMetaConfig: function () {
             return this.deparam(this.getMetaFields());
         }
     });
@@ -124,7 +227,7 @@
             this.config();
         },
         config: function () {
-            this.on( 'dp.show' , 'show' );
+            this.on('dp.show', 'show');
             if (this.element.data('today')) {
                 this.datetimepicker.minDate(moment());
             }
@@ -155,13 +258,13 @@
             this.field = this.find('[data-field]');
             this.input = this.find('[data-input]');
             this.placeholder = this.input.attr('placeholder');
-            this.maxlength   = this.input.attr('maxlength');
-            this.mask        = this.find('[data-mask]');
+            this.maxlength = this.input.attr('maxlength');
+            this.mask = this.find('[data-mask]');
             this.on('focus', 'triggerFocus');
             this.on('keydown paste', '[data-input]', 'keydown');
             this.on('focus blur', '[data-input]', 'toggleFocus');
-            this.on('reset','[data-field]','clear');
-            this.on('focus','[data-field]','triggerFocus');
+            this.on('reset', '[data-field]', 'clear');
+            this.on('focus', '[data-field]', 'triggerFocus');
         },
         keydown: function (el, ev) {
             clearTimeout(this.idle);
@@ -176,20 +279,20 @@
             this.togglePlaceholder();
             this.updateValue();
         },
-        change: function(){
+        change: function () {
             this.newValue = this.onlyNumeric(this.input.val());
             this.oldValue = this.field.val();
             this.changeValue();
             this.togglePlaceholder();
             this.updateValue();
         },
-        onlyNumeric: function(value){
+        onlyNumeric: function (value) {
             return String(value).match(/^[0-9]+$/) ? String(value) : '';
         },
-        toggleFocus: function(){
-            if(this.input.is(':focus')){
+        toggleFocus: function () {
+            if (this.input.is(':focus')) {
                 this.element.addClass('state-focus');
-            } else{
+            } else {
                 this.element.removeClass('state-focus');
             }
         },
@@ -221,7 +324,7 @@
         },
         changeValue: function () {
             if (this.isRemove()) {
-                this.oldValue = this.oldValue.slice(0,-1);
+                this.oldValue = this.oldValue.slice(0, -1);
             } else if (this.maxLength()) {
                 this.oldValue += this.newValue;
             }
@@ -236,7 +339,7 @@
         events: function () {
             this.on('click', '.toggle', 'toggle');
         },
-        close:function(){
+        close: function () {
 
         },
         toggle: function (el, ev) {
@@ -247,7 +350,7 @@
     });
 
     $.createControl('ui.recurring.period', {
-        create: function(){
+        create: function () {
             this.on('change', 'select', 'change');
             this.select = this.find('select');
             this.select.attr('value') && this.select.val(this.select.attr('value'));
@@ -273,26 +376,26 @@
         }
     });
 
-    $.createControl('ui.modal.init',{
-        defaults:{
-            backdrop:false
+    $.createControl('ui.modal.init', {
+        defaults: {
+            backdrop: false
         },
-        wrapper: 'body' ,
-        init: function ( config ) {
+        wrapper: 'body',
+        init: function (config) {
             this.config = $.extend({}, this.defaults, config);
             this.config.element = document.createElement('div');
             this.wrapper = $(this.wrapper);
             this.wrapper.append(this.config.element);
             this.pushInstance();
-            this.initElement( this.config.element );
-            this.create( this.element );
+            this.initElement(this.config.element);
+            this.create(this.element);
         },
-        render:function(){
+        render: function () {
             this.modal = $.ejs(this.config.template).render();
             this.modal = $(this.modal);
             this.element.append(this.modal).initControls();
             this.modal.modal(this.config);
-            this.modal.on('hidden.bs.modal',this.proxy('clean'));
+            this.modal.on('hidden.bs.modal', this.proxy('clean'));
         },
         clean: function () {
             this.modal.off();
@@ -302,12 +405,37 @@
         }
     });
 
+    $.createControl('ui.field.amount', 'ui.base', {
+        create: function () {
+            this.form = this.element.parents('form');
+            this.model = this.getModel('api.checkout');
+            this.state = this.getModel('state').instance();
+            this.state.set('total_amount', 0);
+            this.on('input', 'change');
+            this.change();
+        },
+        change: function (el, ev) {
+            ev && ev.preventDefault();
+            if (this.loading) return false;
+            this.loading = true;
+            this.model.fee({
+                fee: this.element.data('fee'),
+                amount: this.element.val() || this.element.text()
+            }).always(this.proxy('result'));
+        },
+        result: function (xhr, model) {
+            this.loading = false;
+            this.state.set('total_amount', model.attr('amount_with_fee') || 0);
+        }
+    });
+
+
     $.createControl('ui.form.cc', {
         create: function () {
             this.card_number = this.find('input[name="card_number"]');
             this.expiry_date = this.find('input[name="expiry_date"]');
-            this.cvv2        = this.find('input[name="cvv2"]');
-            this.email       = this.find('input[name="email"]');
+            this.cvv2 = this.find('input[name="cvv2"]');
+            this.email = this.find('input[name="email"]');
             this.on('click', '[data-card]', 'card');
         },
         card: function (el, ev) {
@@ -322,191 +450,195 @@
         }
     });
 
-    $.createControl('ui.cards.list', 'ui.base' , {
+    $.createControl('ui.cards.list', 'ui.base', {
         create: function () {
-            this.data  = this.element.data();
+            this.data = this.element.data();
             this.model = this.getModel('api.checkout');
-            this.menu  = this.find('.dropdown-menu');
-            this.template = this.getView('list.cards','block');
-            this.on('show.bs.dropdown','show');
+            this.menu = this.find('.dropdown-menu');
+            this.template = this.getView('list.cards', 'block');
+            this.on('show.bs.dropdown', 'show');
         },
         show: function (el, ev) {
-            if(this.loading) return false;
+            if (this.loading) return false;
             this.loading = true;
             this.menu.addClass('loading');
             this.model.cards().then(this.proxy('render'));
         },
-        render:function(xhr,model){
-            this.menu.html(this.template.render({model:model}));
+        render: function (xhr, model) {
+            this.menu.html(this.template.render({model: model}));
             this.menu.removeClass('loading');
             this.loading = false;
         }
     });
 
-    $.createControl('ui.checkout','ui.base',{
-        create:function(){
-            this.data     = {};
-            this.config   = this.getMetaConfig();
+    $.createControl('ui.checkout', 'ui.base', {
+        create: function () {
+            this.data = {};
+            this.config = this.getMetaConfig();
             this.config.template = 'checkout';
-            this.model    = this.getModel('api.checkout');
-            this.state    = this.getModel('state').instance();
-            this.on('submit','form','submit');
-            this.on('click','[data-action]','action');
+            this.model = this.getModel('api.checkout');
+            this.state = this.getModel('state').instance();
+            this.on('submit', 'form', 'submit');
+            this.on('click', '[data-action]', 'action');
             this.locale().then(this.proxy('render'));
         },
-        action:function(el,ev){
+        action: function (el, ev) {
             var action = el.getAttribute('data-action').split(':');
-            var name   = ['action',action[0]].join('_');
-            var value  = action[1];
-            if(typeof(this[name]) === 'function'){
+            var name = ['action', action[0]].join('_');
+            var value = action[1];
+            if (typeof(this[name]) === 'function') {
                 ev.preventDefault();
-                this[name](el,value);
+                this[name](el, value);
             }
         },
-        action_modal:function(el,value){
-            $.initControl('ui.modal.init',{
-                template: ['modal',value].join('/')
+        action_modal: function (el, value) {
+            $.initControl('ui.modal.init', {
+                template: ['modal', value].join('/')
             }).render();
         },
-        action_page:function(el,value){
+        action_page: function (el, value) {
             this.config.template = value;
             this.render();
         },
-        action_widget: function(el,value){
-            this.data.params.attr('payment_system',el.getAttribute('data-type'));
+        action_widget: function (el, value) {
+            this.data.params.attr('payment_system', el.getAttribute('data-type'));
             this.load_widget(value);
-            this.action_menu(el,'hide');
+            this.action_menu(el, 'hide');
         },
-        action_lang:function(el,value){
+        action_lang: function (el, value) {
             this.config.params.lang = value;
             this.locale().then(this.proxy('render'));
         },
-        action_menu: function(el,value){
+        action_menu: function (el, value) {
             var state = 'hidden';
-            switch (value){
+            switch (value) {
                 case 'show':
                     this.menu.removeClass(state);
                     this.wrapper.addClass(state);
-                break;
+                    break;
                 case 'hide':
                     this.menu.addClass(state);
                     this.wrapper.removeClass(state);
-                break;
+                    break;
                 case 'toggle':
                     this.menu.toggleClass(state);
                     this.wrapper.toggleClass(state);
-                break;
+                    break;
             }
         },
-        load_widget:function(value){
-            this.wrapper.html(this.getView(value,'widget').render(this.data));
+        load_widget: function (value) {
+            this.wrapper.html(this.getView(value, 'widget').render(this.data));
             this.wrapper.initControls();
         },
-        request: function(){
+        request: function () {
             this.model.app(this.config.params).then(this.proxy('render'));
         },
-        locale:function(){
+        locale: function () {
             return $.locale.load(this.config.params.lang);
         },
         submit: function (el, ev) {
             if (ev.isDefaultPrevented()) return;
-                ev.preventDefault();
+            ev.preventDefault();
             this.loading(true);
-            this.params = $.extend({},this.config.params,this.form.getFormData(true));
+            this.params = $.extend({}, this.config.params, this.form.getFormData(true));
             this.model.submit(this.params).done(this.proxy('success')).fail(this.proxy('error'));
         },
-        loading:function(state){
-            this.element.toggleClass('loading',state);
+        loading: function (state) {
+            this.element.toggleClass('loading', state);
         },
-        success:function(xhr,model){
-            if(model.sendResponse()) return;
+        success: function (xhr, model) {
+            if (model.sendResponse()) return;
             this.loading(false);
             model.submitToMerchant();
-            if( model.needVerifyCode() ){
-                this.config.template     = 'verify';
+            if (model.needVerifyCode()) {
+                this.config.template = 'verify';
                 this.config.params.token = model.attr('order.token');
                 this.render();
             }
         },
-        error:function(xhr,model){
+        error: function (xhr, model) {
             this.loading(false);
             this.find('[data-message]').removeClass('hidden')
-                .html(this.getView('message','error').render({model:model}));
+                .html(this.getView('message', 'error').render({model: model}));
         },
         render: function(){
             this.data.params = this.getModel('params',this.config.params);
-            this.data.view   = this.getModel('view',this.config.view);
-            this.state.attr('params',this.data.params);
-            this.state.attr('view',this.data.params);
+            this.data.view = this.getModel('view',this.config.view);
             this.element.html(this.getView(this.config.template).render(this.data)).initControls();
             this.wrapper = this.find('[data-form-wrapper]');
-            this.menu    = this.find('[data-payment-methods]');
-            this.form    = this.find('[data-form]').validator({});
+            this.menu = this.find('[data-payment-methods]');
+            this.form = this.find('[data-form]').validator({});
         }
     });
 
 })(jQuery);
 
-(function($){
-    $.createModel('state',{
-        instance:function(){
-            if(!this.constructor.singleton){
+
+(function ($) {
+    $.createModel('state', {
+        instance: function () {
+            if (!this.constructor.singleton) {
                 this.constructor.singleton = this._super();
             }
             return this.constructor.singleton;
         },
-        init:function(){
-            this.data     = {};
+        init: function () {
+            this.data = {};
             this.listener = $(document.createElement('div'));
         },
-        set:function(key,value){
+        set: function (key, value) {
             var old = this.get(key);
-            this.attr(key,value);
-            if( old === undefined ) this.trigger('add',key,value,old);
-            if( value !== old ) this.trigger('change',key,value,old);
-            this.trigger(key,key,value,old);
+            this.attr(key, value);
+            if (old === undefined) this.trigger('add', key, value, old);
+            if (value !== old) this.trigger('change', key, value, old);
+            this.trigger(key, key, value, old);
         },
-        get:function(key){
+        get: function (key) {
             return this.attr(key);
         },
-        trigger:function(key){
-            var props  = Array.prototype.slice.call(arguments,1);
-            var params = [key,props];
-            this.listener.trigger.apply(this.listener,params);
+        trigger: function (key) {
+            var props = Array.prototype.slice.call(arguments, 1);
+            var params = [key, props];
+            this.listener.trigger.apply(this.listener, params);
             return this;
         },
-        on:function(key,callback){
-            this.listener.on.apply(this.listener,arguments);
+        on: function (key, callback) {
+            this.listener.on.apply(this.listener, arguments);
             return this;
         },
-        off:function(key,callback){
-            this.listener.off.apply(this.listener,arguments);
+        off: function (key, callback) {
+            this.listener.off.apply(this.listener, arguments);
             return this;
         }
     });
-    $.createControl('ui.state',{
-        create:function(){
+
+    $.createControl('ui.state', {
+        create: function () {
             this.state = $.getModel('state').instance();
-            this.on( 'keypress input change copy paste' , '[data-bind]' ,'value');
-            this.state.on( 'change' , this.proxy('handler') );
+            this.on('keypress input change copy paste', '[x-value]', 'value');
+            this.state.on('change', this.proxy('handler'));
         },
-        value:function(el,ev){
-            if( this.process ) return;
-            this.event   = ev;
-            this.target  = el;
+        value: function (el, ev) {
+            if (this.process) return;
+            this.event = ev;
+            this.target = el;
             this.process = true;
-            this.timeout('change',25);
+            this.timeout('change', 25);
         },
-        change:function(){
+        change: function () {
             this.process = false;
-            this.prop    = this.target.getAttribute('data-bind');
-            this.state.set(this.prop,this.target.value);
+            this.prop = this.target.getAttribute('x-value');
+            this.state.set(this.prop, this.target.value);
         },
-        handler:function(el,ev,key,value){
-            var list = this.find('[data-bind="'+key+'"]').not(this.target);
-            list.each(function(index,element){
-                element.value     = value;
-                element.innerHTML = value;
+        elements: function (type, key) {
+            return this.find('[x-' + type + '="' + key + '"]');
+        },
+        handler: function (el, ev, key, value) {
+            this.elements('value', key).not(this.target).each(function (i, e) {
+                e.value = value;
+            });
+            this.elements('text', key).not(this.target).each(function (i, e) {
+                e.innerHTML = value;
             });
         }
     });

@@ -10,7 +10,7 @@
         <button type="submit" class="btn btn-lg btn-block btn-primary">
             <i class="fa fa-lock"></i>
             <%= _('Pay') %>
-            <b><span data-bind="amount"><%= params.attr('amount') %></span> <%= params.attr('currency') %></b>
+            <b><span x-text="amount"><%= params.attr('amount') %></span> <%= params.attr('currency') %></b>
         </button>
     </div>
     </div>

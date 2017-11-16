@@ -59,30 +59,32 @@ gulp.task('translation', ['gettext'] , function(){
         .pipe(gulp.dest('dist/i18n/'))
 });
 
-gulp.task('bootstrap-less', function(){
+gulp.task('less:bootstrap', function(){
     return gulp.src(['bower_components/bootstrap/less/**']).pipe(gulp.dest('src/less/bootstrap'));
 });
 
-gulp.task('font-awesome-less', function(){
+gulp.task('less:font-awesome', function(){
     return gulp.src(['bower_components/font-awesome/less/**']).pipe(gulp.dest('src/less/font-awesome'));
 });
 
-gulp.task('flag-icons-less', function(){
+gulp.task('less:flag-icons', function(){
     return gulp.src(['bower_components/flag-icon-css/less/**']).pipe(gulp.dest('src/less/flag-icons'));
 });
 
-gulp.task('animate-less', function(){
+gulp.task('less:animate.less', function(){
     return gulp.src(['bower_components/animate.less/source/**']).pipe(gulp.dest('src/less/animate'));
 });
 
-gulp.task('less-import', [
-    'bootstrap-less',
-    'font-awesome-less',
-    'flag-icons-less',
-    'animate-less'
+gulp.task('less:import', [
+    'less:bootstrap',
+    'less:font-awesome',
+    'less:flag-icons',
+    'less:animate.less'
 ]);
 
-gulp.task('less', ['less-import'], function(){
+
+
+gulp.task('less', ['less:import'], function(){
     return gulp.src(['src/less/*.less']).pipe(less())
         .pipe(gulp.dest('dist/css'))
         .pipe(cssmin())
