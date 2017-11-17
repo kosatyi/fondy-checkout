@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-17 12:23+0200\n"
+"POT-Creation-Date: 2017-11-17 17:03+0200\n"
 "PO-Revision-Date: 2016-12-02 13:09+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -58,41 +58,41 @@ msgid "Pay"
 msgstr ""
 
 #: src/locale/templates.js:2
-msgid "CVV2/CVC2 code is three-digit code on the back of your credit card"
-msgstr ""
-
-#: src/locale/templates.js:3
-msgid "Card number"
-msgstr ""
-
-#: src/locale/templates.js:4
-msgid "Card number is 14-19 digits on the front side of your credit card"
-msgstr ""
-
-#: src/locale/templates.js:5
 msgid "Pay amount"
 msgstr ""
 
-#: src/locale/templates.js:6
+#: src/locale/templates.js:3
 msgid "Order amount"
 msgstr "Pasūtījuma summa"
 
-#: src/locale/templates.js:7
+#: src/locale/templates.js:4
 msgid "Commision"
 msgstr ""
 
-#: src/locale/templates.js:8
+#: src/locale/templates.js:5
 msgid "Total amount"
 msgstr "Summa kopā"
 
-#: src/locale/templates.js:9
+#: src/locale/templates.js:6
+msgid "CVV2/CVC2 code is three-digit code on the back of your credit card"
+msgstr ""
+
+#: src/locale/templates.js:7
 msgid "MM / YY"
 msgstr ""
 
-#: src/locale/templates.js:10
+#: src/locale/templates.js:8
 msgid ""
 "Valid thru is the expiry month and year indicated on the front side of your "
 "credit card"
+msgstr ""
+
+#: src/locale/templates.js:9
+msgid "Card number"
+msgstr ""
+
+#: src/locale/templates.js:10
+msgid "Card number is 14-19 digits on the front side of your credit card"
 msgstr ""
 
 #: src/locale/templates.js:11
