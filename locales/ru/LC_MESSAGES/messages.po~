@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-17 17:03+0200\n"
+"POT-Creation-Date: 2017-11-17 17:10+0200\n"
 "PO-Revision-Date: 2017-06-06 17:29+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,42 +16,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.11\n"
-
-#: src/js/app/index.js:78
-msgid "Credit card"
-msgstr ""
-
-#: src/js/app/index.js:84
-msgid "Sepa"
-msgstr ""
-
-#: src/js/app/index.js:90
-msgid "Paypal"
-msgstr ""
-
-#: src/js/app/index.js:96
-msgid "Privat 24"
-msgstr ""
-
-#: src/js/app/index.js:102
-msgid "Trustly"
-msgstr ""
-
-#: src/js/app/index.js:108
-msgid "Yandex"
-msgstr ""
-
-#: src/js/app/index.js:114
-msgid "WebMoney"
-msgstr ""
-
-#: src/js/app/index.js:120
-msgid "Qiwi"
-msgstr ""
-
-#: src/js/app/index.js:126
-msgid "Liqpay"
-msgstr ""
 
 #: src/locale/templates.js:1
 msgid "Pay"
@@ -74,25 +38,25 @@ msgid "Total amount"
 msgstr "Общая сумма"
 
 #: src/locale/templates.js:6
-msgid "CVV2/CVC2 code is three-digit code on the back of your credit card"
-msgstr ""
-
-#: src/locale/templates.js:7
 msgid "MM / YY"
 msgstr ""
 
-#: src/locale/templates.js:8
+#: src/locale/templates.js:7
 msgid ""
 "Valid thru is the expiry month and year indicated on the front side of your "
 "credit card"
 msgstr ""
 
-#: src/locale/templates.js:9
+#: src/locale/templates.js:8
 msgid "Card number"
 msgstr "Номер карты"
 
-#: src/locale/templates.js:10
+#: src/locale/templates.js:9
 msgid "Card number is 14-19 digits on the front side of your credit card"
+msgstr ""
+
+#: src/locale/templates.js:10
+msgid "CVV2/CVC2 code is three-digit code on the back of your credit card"
 msgstr ""
 
 #: src/locale/templates.js:11
@@ -156,16 +120,16 @@ msgid "Find Payment Methods"
 msgstr ""
 
 #: src/locale/templates.js:26
-msgid "OTP"
+msgid "Back to merchant"
 msgstr ""
 
 #: src/locale/templates.js:27
-msgid "Confirm"
-msgstr "Подтвердить"
+msgid "OTP"
+msgstr ""
 
 #: src/locale/templates.js:28
-msgid "Back to merchant"
-msgstr ""
+msgid "Confirm"
+msgstr "Подтвердить"
 
 #: src/locale/templates.js:29
 msgid "Cancel"
@@ -198,6 +162,42 @@ msgstr "Slovenský"
 #: src/locale/translation.js:7
 msgid "uk"
 msgstr "Українською"
+
+#: src/js/app/index.js:78
+msgid "Credit card"
+msgstr ""
+
+#: src/js/app/index.js:84
+msgid "Sepa"
+msgstr ""
+
+#: src/js/app/index.js:90
+msgid "Paypal"
+msgstr ""
+
+#: src/js/app/index.js:96
+msgid "Privat 24"
+msgstr ""
+
+#: src/js/app/index.js:102
+msgid "Trustly"
+msgstr ""
+
+#: src/js/app/index.js:108
+msgid "Yandex"
+msgstr ""
+
+#: src/js/app/index.js:114
+msgid "WebMoney"
+msgstr ""
+
+#: src/js/app/index.js:120
+msgid "Qiwi"
+msgstr ""
+
+#: src/js/app/index.js:126
+msgid "Liqpay"
+msgstr ""
 
 #~ msgid "MM"
 #~ msgstr "MM"

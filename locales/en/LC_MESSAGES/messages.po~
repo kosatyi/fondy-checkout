@@ -156,16 +156,16 @@ msgid "Find Payment Methods"
 msgstr ""
 
 #: src/locale/templates.js:26
-msgid "OTP"
+msgid "Back to merchant"
 msgstr ""
 
 #: src/locale/templates.js:27
-msgid "Confirm"
-msgstr "Confirm"
+msgid "OTP"
+msgstr ""
 
 #: src/locale/templates.js:28
-msgid "Back to merchant"
-msgstr ""
+msgid "Confirm"
+msgstr "Confirm"
 
 #: src/locale/templates.js:29
 msgid "Cancel"
