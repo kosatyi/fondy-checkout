@@ -11,11 +11,6 @@ var rename   = require('gulp-rename');
 var gettext  = require('node-gettext-generator');
 var jsmin    = require('gulp-jsmin');
 
-var combineFiles = function(name,deps,out){
-    return gulp.src(deps).pipe(concat(name))
-        .pipe(uglify())
-        .pipe(gulp.dest(out));
-};
 
 gulp.task('fonts', function(){
     return gulp.src([
@@ -82,8 +77,6 @@ gulp.task('less:import', [
     'less:animate.less'
 ]);
 
-
-
 gulp.task('less', ['less:import'], function(){
     return gulp.src(['src/less/*.less']).pipe(less())
         .pipe(gulp.dest('dist/css'))
@@ -116,7 +109,7 @@ gulp.task('views', function() {
 
 
 gulp.task('app', ['views'], function(){
-    return combineFiles('checkout.js',[
+    return gulp.src([
         'bower_components/jquery/dist/jquery.js',
         'bower_components/bootstrap/dist/js/bootstrap.js',
         'bower_components/jquery-mask-plugin/dist/jquery.mask.js',
@@ -127,7 +120,11 @@ gulp.task('app', ['views'], function(){
         'src/js/app/index.js',
         'src/js/app/router.js',
         'src/js/app/views.js'
-    ],'dist/js');
+    ]).pipe(concat('checkout.js'))
+      .pipe(gulp.dest('dist/js'))
+      .pipe(uglify())
+      .pipe(rename({extname:'.min.js'}))
+      .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('watcher', function(){

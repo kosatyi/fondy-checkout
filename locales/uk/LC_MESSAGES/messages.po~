@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-17 18:35+0200\n"
+"POT-Creation-Date: 2017-11-17 18:38+0200\n"
 "PO-Revision-Date: 2017-06-06 17:32+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -148,29 +148,29 @@ msgstr ""
 msgid "YYYY-MM-DD"
 msgstr ""
 
-#: src/locale/templates.js:23 src/views/block/list.payment.methods.ejs:6
-msgid "Choose Payment Method"
-msgstr ""
-
-#: src/locale/templates.js:24
-msgid "Find Payment Methods"
-msgstr ""
-
-#: src/locale/templates.js:25 src/views/block/list.cards.ejs:1
+#: src/locale/templates.js:23 src/views/block/list.cards.ejs:1
 msgid "Saved session cards"
 msgstr ""
 
+#: src/locale/templates.js:24 src/views/block/list.payment.methods.ejs:6
+msgid "Choose Payment Method"
+msgstr ""
+
+#: src/locale/templates.js:25
+msgid "Find Payment Methods"
+msgstr ""
+
 #: src/locale/templates.js:26
-msgid "OTP"
+msgid "Back to merchant"
 msgstr ""
 
 #: src/locale/templates.js:27
-msgid "Confirm"
-msgstr "Підтвердити"
+msgid "OTP"
+msgstr ""
 
 #: src/locale/templates.js:28
-msgid "Back to merchant"
-msgstr ""
+msgid "Confirm"
+msgstr "Підтвердити"
 
 #: src/locale/templates.js:29
 msgid "Cancel"
