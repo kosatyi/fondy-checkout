@@ -1,7 +1,7 @@
 {
   "name": "fondy-checkout",
   "description": "Fondy Checkout Widget",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "homepage": "https://checkout.rocks",
   "scripts": {
@@ -12,9 +12,7 @@
     "type": "git",
     "url": "https://github.com/kosatyi/fondy-checkout.git"
   },
-  "files": [
-    "dist"
-  ],
+  "unpkg": "dist/js/checkout.min.js",
   "dependencies": {},
   "devDependencies": {
     "bower": "^1.8.2",
