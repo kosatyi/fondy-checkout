@@ -1,13 +1,15 @@
 {
   "name": "fondy-checkout",
   "description": "Fondy Checkout Widget",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "homepage": "https://checkout.rocks",
   "scripts": {
     "build": "npm install && bower install && gulp",
+    "prepublishOnly":"npm install && bower install && gulp",
     "start": "gulp watcher"
   },
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "https://github.com/kosatyi/fondy-checkout.git"
