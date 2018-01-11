@@ -6,10 +6,14 @@
   "homepage": "https://checkout.rocks",
   "scripts": {
     "build": "npm install && bower install && bower update && gulp",
-    "prepublishOnly":"npm install && bower install && bower update && gulp",
+    "prepublishOnly": "npm install && bower install && bower update && gulp",
     "start": "gulp watcher"
   },
-  "files": ["dist","src","locales"],
+  "files": [
+    "dist",
+    "src",
+    "locales"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/kosatyi/fondy-checkout.git"
@@ -34,6 +38,6 @@
     "gulp-uglify": "^3.0.0",
     "gulp-wrap": "^0.13.0",
     "i18next-conv": "~2.0.0",
-    "node-gettext-generator": "git://github.com/kosatyi/node-gettext-generator"
+    "node-gettext-generator": "^0.2.7"
   }
 }
