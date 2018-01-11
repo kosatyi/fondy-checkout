@@ -141,6 +141,6 @@ gulp.task('default', [
     'flags',
     'fonts',
     'less',
-    'translation',
-    'app'
+    'app',
+    'translation'
 ]);
