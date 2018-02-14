@@ -51,7 +51,8 @@ git clone git@github.com:kosatyi/fondy-checkout.git
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/fondy-checkout@latest/dist/css/checkout.css">
+    <link ref="https://unpkg.com/fondy-checkout@latest/dist/css/checkout.css" 
+    rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div control="ui.checkout">
