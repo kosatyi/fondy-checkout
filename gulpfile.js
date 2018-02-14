@@ -14,8 +14,8 @@ var jsmin    = require('gulp-jsmin');
 
 gulp.task('fonts', function(){
     return gulp.src([
-        'bower_components/**/fonts/*.*',
-        'bower_components/roboto-fontface/fonts/Roboto/*.*'
+        'node_modules/**/fonts/*.*',
+        'node_modules/roboto-fontface/fonts/Roboto/*.*'
     ]).pipe(flatten()).pipe(gulp.dest('dist/fonts'));
 });
 
@@ -55,19 +55,19 @@ gulp.task('translation', ['gettext'] , function(){
 });
 
 gulp.task('less:bootstrap', function(){
-    return gulp.src(['bower_components/bootstrap/less/**']).pipe(gulp.dest('src/less/bootstrap'));
+    return gulp.src(['node_modules/bootstrap/less/**']).pipe(gulp.dest('src/less/bootstrap'));
 });
 
 gulp.task('less:font-awesome', function(){
-    return gulp.src(['bower_components/font-awesome/less/**']).pipe(gulp.dest('src/less/font-awesome'));
+    return gulp.src(['node_modules/font-awesome/less/**']).pipe(gulp.dest('src/less/font-awesome'));
 });
 
 gulp.task('less:flag-icons', function(){
-    return gulp.src(['bower_components/flag-icon-css/less/**']).pipe(gulp.dest('src/less/flag-icons'));
+    return gulp.src(['node_modules/flag-icon-css/less/**']).pipe(gulp.dest('src/less/flag-icons'));
 });
 
 gulp.task('less:animate.less', function(){
-    return gulp.src(['bower_components/animate.less/source/**']).pipe(gulp.dest('src/less/animate'));
+    return gulp.src(['node_modules/animate.less/source/**']).pipe(gulp.dest('src/less/animate'));
 });
 
 gulp.task('less:import', [
@@ -85,11 +85,11 @@ gulp.task('less', ['less:import'], function(){
 });
 
 gulp.task('icons', function(){
-    return gulp.src(['bower_components/fondy-icons/dist/**']).pipe(gulp.dest('dist/icons'))
+    return gulp.src(['node_modules/fondy-icons/dist/**']).pipe(gulp.dest('dist/icons'))
 });
 
 gulp.task('flags', function(){
-    return gulp.src(['bower_components/flag-icon-css/flags/**']).pipe(gulp.dest('dist/flags'));
+    return gulp.src(['node_modules/flag-icon-css/flags/**']).pipe(gulp.dest('dist/flags'));
 });
 
 gulp.task('images', function(){
@@ -110,10 +110,10 @@ gulp.task('views', function() {
 
 gulp.task('app', ['views'], function(){
     return gulp.src([
-        'bower_components/jquery/dist/jquery.js',
-        'bower_components/bootstrap/dist/js/bootstrap.js',
-        'bower_components/jquery-mask-plugin/dist/jquery.mask.js',
-        'bower_components/ipsp-js-sdk/dist/checkout.js',
+        'node_modules/jquery/dist/jquery.js',
+        'node_modules/bootstrap/dist/js/bootstrap.js',
+        'node_modules/jquery-mask-plugin/dist/jquery.mask.js',
+        'node_modules/ipsp-js-sdk/dist/checkout.js',
         'src/js/lib/bootstrap.validator.js',
         'src/js/lib/jquery.control.js',
         'src/js/lib/jquery.control.payment.js',
@@ -129,7 +129,6 @@ gulp.task('app', ['views'], function(){
 
 gulp.task('watcher', function(){
     gulp.watch(['src/**/*.ejs'],['views']);
-    gulp.watch(['bower_components/**/*.js', 'src/js/**/*.js'],['app']);
     gulp.watch(['src/less/*.less','src/less/source/*.less'],['less']);
     gulp.watch(['locales/**/*.po'],['translation']);
 });

@@ -20,7 +20,18 @@
   },
   "unpkg": "dist/js/checkout.min.js",
   "main": "dist/js/checkout.min.js",
-  "dependencies": {},
+  "dependencies": {
+    "animate.less": "*",
+    "bootstrap": "^3.3.7",
+    "bootstrap-validator": "^0.11.9",
+    "flag-icon-css": "^2.8.0",
+    "fondy-icons": "^1.0.0",
+    "font-awesome": "^4.7.0",
+    "ipsp-js-sdk": "^1.0.12",
+    "jquery": "^3.3.1",
+    "jquery-mask-plugin": "^1.14.13",
+    "roboto-fontface": "^0.7.0"
+  },
   "devDependencies": {
     "deferred": "~0.7.1",
     "del": "^3.0.0",
