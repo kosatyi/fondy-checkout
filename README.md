@@ -87,6 +87,18 @@ git clone git@github.com:kosatyi/fondy-checkout.git
 </html>
 ```
 
+## Result
+
 <p align="center">
     <img src="https://image.prntscr.com/image/0KJQnJALT0WgVMi9PaDoPA.png">
 </p>
+
+## License
+
+[MIT](https://github.com/kosatyi/fondy-checkout/blob/HEAD/LICENSE)
+
+## Author
+
+Stepan Kosatyi, stepan@kosatyi.com
+
+[![Stepan Kosatyi](https://img.shields.io/badge/stepan-kosatyi-purple.svg)](https://kosatyi.com/)
