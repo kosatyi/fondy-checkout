@@ -5,9 +5,9 @@
   "license": "MIT",
   "homepage": "https://checkout.rocks",
   "scripts": {
-    "build": "npm install && bower install && bower update && gulp",
-    "prepublishOnly": "npm install && bower install && bower update && gulp",
-    "start": "gulp watcher"
+    "build": "npm install && ./node_modules/gulp/bin/gulp.js",
+    "prepublishOnly": "npm install && ./node_modules/gulp/bin/gulp.js",
+    "start": "./node_modules/gulp/bin/gulp.js watcher"
   },
   "files": [
     "dist",
@@ -19,9 +19,9 @@
     "url": "https://github.com/kosatyi/fondy-checkout.git"
   },
   "unpkg": "dist/js/checkout.min.js",
+  "main": "dist/js/checkout.min.js",
   "dependencies": {},
   "devDependencies": {
-    "bower": "^1.8.2",
     "deferred": "~0.7.1",
     "del": "^3.0.0",
     "extend": "~3.0.0",
