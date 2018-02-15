@@ -1,6 +1,10 @@
 # Fondy Checkout Widget
 
+![npm](https://img.shields.io/npm/v/fondy-checkout.svg) 
+![license](https://img.shields.io/npm/l/fondy-checkout.svg) 
+![github-issues](https://img.shields.io/github/issues/kosatyi/fondy-checkout.svg) 
 
+![nodei.co](https://nodei.co/npm/fondy-checkout.png?downloads=true&downloadRank=true&stars=true)
 
 ## Installation
 
@@ -56,6 +60,7 @@ git clone git@github.com:kosatyi/fondy-checkout.git
 </head>
 <body>
 <div control="ui.checkout">
+    <param name="params[merchant_id]" value="1396424" />
     <param name="params[amount]" value="1500" />
     <param name="params[currency]" value="USD" />
     <param name="params[lang]" value="en" />
