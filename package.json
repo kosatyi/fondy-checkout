@@ -1,7 +1,7 @@
 {
   "name": "fondy-checkout",
   "description": "Fondy Checkout Widget",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "license": "MIT",
   "homepage": "https://checkout.rocks",
   "scripts": {
