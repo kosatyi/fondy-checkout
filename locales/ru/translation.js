@@ -1,13 +1,4 @@
 (function(n,k,v){this[n]=this[n]||{};this[n][k]=v})("i18n","ru",{
-    "Credit card": "",
-    "Sepa": "",
-    "Paypal": "",
-    "Privat 24": "",
-    "Trustly": "",
-    "Yandex": "",
-    "WebMoney": "",
-    "Qiwi": "",
-    "Liqpay": "",
     "Pay": "",
     "Pay amount": "",
     "Order amount": "Сумма к оплате",
@@ -43,5 +34,14 @@
     "lv": "Latviešu",
     "ru": "Русский",
     "sk": "Slovenský",
-    "uk": "Українською"
+    "uk": "Українською",
+    "Credit card": "",
+    "Sepa": "",
+    "Paypal": "",
+    "Privat 24": "",
+    "Trustly": "",
+    "Yandex": "",
+    "WebMoney": "",
+    "Qiwi": "",
+    "Liqpay": ""
 });

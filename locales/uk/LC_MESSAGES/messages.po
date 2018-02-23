@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-14 14:28+0200\n"
+"POT-Creation-Date: 2018-02-23 17:33+0200\n"
 "PO-Revision-Date: 2017-06-06 17:32+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,42 +16,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.11\n"
-
-#: src/js/app/index.js:75
-msgid "Credit card"
-msgstr ""
-
-#: src/js/app/index.js:81
-msgid "Sepa"
-msgstr ""
-
-#: src/js/app/index.js:87
-msgid "Paypal"
-msgstr ""
-
-#: src/js/app/index.js:93
-msgid "Privat 24"
-msgstr ""
-
-#: src/js/app/index.js:99
-msgid "Trustly"
-msgstr ""
-
-#: src/js/app/index.js:105
-msgid "Yandex"
-msgstr ""
-
-#: src/js/app/index.js:111
-msgid "WebMoney"
-msgstr ""
-
-#: src/js/app/index.js:117
-msgid "Qiwi"
-msgstr ""
-
-#: src/js/app/index.js:123
-msgid "Liqpay"
-msgstr ""
 
 #: src/locale/templates.js:1
 msgid "Pay"
@@ -202,6 +166,42 @@ msgstr ""
 
 #: src/locale/translation.js:7
 msgid "uk"
+msgstr ""
+
+#: src/js/app/index.js:75
+msgid "Credit card"
+msgstr ""
+
+#: src/js/app/index.js:81
+msgid "Sepa"
+msgstr ""
+
+#: src/js/app/index.js:87
+msgid "Paypal"
+msgstr ""
+
+#: src/js/app/index.js:93
+msgid "Privat 24"
+msgstr ""
+
+#: src/js/app/index.js:99
+msgid "Trustly"
+msgstr ""
+
+#: src/js/app/index.js:105
+msgid "Yandex"
+msgstr ""
+
+#: src/js/app/index.js:111
+msgid "WebMoney"
+msgstr ""
+
+#: src/js/app/index.js:117
+msgid "Qiwi"
+msgstr ""
+
+#: src/js/app/index.js:123
+msgid "Liqpay"
 msgstr ""
 
 #~ msgid "MM"

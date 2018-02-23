@@ -1,13 +1,4 @@
 {
-    "Credit card": "",
-    "Sepa": "",
-    "Paypal": "",
-    "Privat 24": "",
-    "Trustly": "",
-    "Yandex": "",
-    "WebMoney": "",
-    "Qiwi": "",
-    "Liqpay": "",
     "Pay": "",
     "Pay amount": "",
     "Order amount": "Сума до сплати",
@@ -43,5 +34,14 @@
     "lv": "",
     "ru": "",
     "sk": "",
-    "uk": ""
+    "uk": "",
+    "Credit card": "",
+    "Sepa": "",
+    "Paypal": "",
+    "Privat 24": "",
+    "Trustly": "",
+    "Yandex": "",
+    "WebMoney": "",
+    "Qiwi": "",
+    "Liqpay": ""
 }
