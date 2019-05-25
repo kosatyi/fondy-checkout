@@ -18,9 +18,9 @@ navigation: false
 
 projects: true
 
-brand: NGG
-title: Node Gettext Generator
-description: Generate translation from your project source files to *.po files and compile to *.mo
+brand: fondy-checkout
+title: Fondy Checkout Widget
+description: 
 
 author:
   name: Stepan Kosatyi
