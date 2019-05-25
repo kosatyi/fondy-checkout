@@ -46,6 +46,7 @@
     "gulp-json-to-js": "^1.0.2",
     "gulp-json-wrapper": "^1.0.0",
     "gulp-less": "^3.3.2",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
     "gulp-wrap": "^0.13.0",
     "i18next-conv": "~2.0.0",

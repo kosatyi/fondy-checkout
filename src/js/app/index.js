@@ -10,7 +10,6 @@
             return $.getModel(name,data);
         }
     });
-
     $.createModel('api', 'base', {
         getInstance: function () {
             if (!this.constructor.instance) {
@@ -33,7 +32,6 @@
             return defer;
         }
     });
-
 
     $.createModel('api.checkout', 'api', {
         app: function (params) {
@@ -533,12 +531,15 @@
         locale: function () {
             return $.locale.load(this.config.params.lang);
         },
+        getParams:function(){
+            this.params = $.extend({}, this.config.params , this.form.getFormData(true));
+            return this.params;
+        },
         submit: function (el, ev) {
             if (ev.isDefaultPrevented()) return;
             ev.preventDefault();
             this.loading(true);
-            this.params = $.extend({}, this.config.params, this.form.getFormData(true));
-            this.model.submit(this.params).done(this.proxy('success')).fail(this.proxy('error'));
+            this.model.submit(this.getParams()).done(this.proxy('success')).fail(this.proxy('error'));
         },
         loading: function (state) {
             this.element.toggleClass('loading', state);
@@ -565,6 +566,9 @@
             this.wrapper = this.find('[data-form-wrapper]');
             this.menu = this.find('[data-payment-methods]');
             this.form = this.find('[data-form]').validator({});
+            this.model.app(this.getParams()).then(function(model){
+                console.log(model);
+            });
         }
     });
 

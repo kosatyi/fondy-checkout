@@ -11,6 +11,7 @@ var rename   = require('gulp-rename');
 var gettext  = require('node-gettext-generator');
 var jsmin    = require('gulp-jsmin');
 
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('fonts', function(){
     return gulp.src([
@@ -121,13 +122,15 @@ gulp.task('app', ['views'], function(){
         'src/js/app/router.js',
         'src/js/app/views.js'
     ]).pipe(concat('checkout.js'))
-      .pipe(gulp.dest('dist/js'))
+      .pipe(sourcemaps.init())
       .pipe(uglify())
-      .pipe(rename({extname:'.min.js'}))
+      .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest('dist/js'));
 });
 
+
 gulp.task('watcher', function(){
+    gulp.watch(['src/**/*.js'],['app']);
     gulp.watch(['src/**/*.ejs'],['views']);
     gulp.watch(['src/less/*.less','src/less/source/*.less'],['less']);
     gulp.watch(['locales/**/*.po'],['translation']);
