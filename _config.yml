@@ -1,0 +1,29 @@
+plugins:
+  - jekyll-seo-tag
+
+port: 4001
+
+styles:
+
+remote_theme: kosatyi/sjt
+
+exclude:
+  - vendor
+
+javascript:
+
+baseurl: /node-gettext-generator
+
+navigation: false
+
+projects: true
+
+brand: NGG
+title: Node Gettext Generator
+description: Generate translation from your project source files to *.po files and compile to *.mo
+
+author:
+  name: Stepan Kosatyi
+  url: http://www.kosatyi.com/
+
+toolbar:
