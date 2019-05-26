@@ -95,7 +95,7 @@ git clone git@github.com:kosatyi/fondy-checkout.git
 ## Result
 
 <p align="center">
-    <img src="https://image.prntscr.com/image/0KJQnJALT0WgVMi9PaDoPA.png">
+    <img src="https://i.imgur.com/AeQHnxH.png">
 </p>
 
 ## License
