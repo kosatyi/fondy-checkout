@@ -9,6 +9,7 @@ remote_theme: kosatyi/sjt
 
 exclude:
   - vendor
+  - src
 
 javascript:
 
