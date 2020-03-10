@@ -1,30 +1,14 @@
-plugins:
-  - jekyll-seo-tag
-
-port: 4001
-
-styles:
-
 remote_theme: kosatyi/sjt
 
-exclude:
-  - vendor
-  - src
-
-javascript:
-
-baseurl: /node-gettext-generator
-
 navigation: false
-
 projects: true
+
+baseurl: /fondy-checkout
 
 brand: fondy-checkout
 title: Fondy Checkout Widget
-description: 
+description:
 
 author:
   name: Stepan Kosatyi
-  url: http://www.kosatyi.com/
-
-toolbar:
+  url: https://kosatyi.com/
