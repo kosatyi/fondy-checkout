@@ -8,10 +8,8 @@ baseurl: /fondy-checkout
 brand: fondy-checkout
 title: Fondy Checkout Widget
 description:
-<<<<<<< HEAD
 analytics: UA-37629144-1
-=======
->>>>>>> 3b17e53ca4b38ee0dcd1cdf7da05cec599144232
+
 
 author:
   name: Stepan Kosatyi
