@@ -21,7 +21,8 @@ projects: true
 
 brand: fondy-checkout
 title: Fondy Checkout Widget
-description: 
+description:
+analytics: UA-37629144-1
 
 author:
   name: Stepan Kosatyi
