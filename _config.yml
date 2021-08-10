@@ -1,8 +1,3 @@
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-
 remote_theme: kosatyi/sjt
 
 navigation: false
